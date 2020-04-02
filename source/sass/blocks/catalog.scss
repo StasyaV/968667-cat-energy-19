@@ -1,0 +1,7 @@
+.catalog {
+  font-family: $font-oswald;
+  color: $font-black;
+}
+.catalog__title {
+  @include title ();
+}

@@ -1,0 +1,32 @@
+.menu {
+  @include font-medium();
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  text-transform: uppercase;
+
+  list-style: none;
+}
+
+.menu__item {
+  display: block;
+  vertical-align: middle;
+  width: 320px;
+  padding: 20px 0px;
+  margin: 0;
+  border: 1px solid #ededed;
+  a {
+    color: $font-black;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: rgba(17, 17, 17, 0.6);
+    }
+    &:active {
+      color: rgba(17, 17, 17, 0.3);
+    }
+  }
+  &--active {
+    border-bottom: 2px solid #68b738;
+  }
+}
