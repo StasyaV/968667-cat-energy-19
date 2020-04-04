@@ -6,18 +6,22 @@
   background-color: $background-color;
   padding: 33px 20px;
 }
+
 .example__title {
-  @include title ();
+  @include title();
 }
+
 .data-type {
   font-family: $font-oswald;
   color: $font-black;
   font-size: 24px;
   line-height: 24px;
 }
+
 .data__description {
   font-size: 12px;
 }
+
 .stat__total {
   color: $font-black;
   text-transform: uppercase;

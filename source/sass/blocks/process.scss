@@ -5,13 +5,16 @@
   line-height: 18px;
   text-align: left;
 }
+
 .process__list {
   list-style: none;
 }
+
 .process__title {
-  @include title ();
+  @include title();
   margin: 32px 22px;
 }
+
 .process__item {
   margin: 20px;
 }

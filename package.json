@@ -37,5 +37,9 @@
   ],
   "engines": {
     "node": "8.16"
+  },
+  "dependencies": {
+    "atom-linter": "^10.0.0",
+    "stylefmt": "^6.0.3"
   }
 }
