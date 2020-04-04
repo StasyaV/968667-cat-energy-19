@@ -3,17 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <div class="header__logo logo">
-        <img src="" width="191" height="39" alt="Логотип компании">
+        <a href="index.html">
+          <img src="img/logo-mobile.svg" width="191" height="39" alt="Логотип компании">
+        </a>
       </div>
       <nav class="main-nav">
         <button type="button" class="main-nav__button"></button>
         <ul class="main-nav__menu menu">
           <li class="menu__item"><a href="index.html">Главная</a></li>
-          <li class="menu__item"><a>Каталог продукции</a></li>
+          <li class="menu__item menu__item--active"><a>Каталог продукции</a></li>
           <li class="menu__item"><a href="form.html">Подбор программы</a></li>
         </ul>
       </nav>
@@ -24,7 +27,7 @@
         <h2 class="visually-hidden">Здоровое питание для ваших котов</h2>
         <ul class="products__list list">
           <li class="list__item item">
-            <img class="item__image" src="#" width="140" height="144" alt="Изображение корма Cat Energy">
+            <img class="item__image" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Изображение корма Cat Energy">
             <div class="item__table item-features">
               <p class="item-features__name">Cat Energy Pro 500 г</p>
               <div class="item-features__data item-features__data--weight">
@@ -40,10 +43,10 @@
                 <p>700 р.</p>
               </div>
             </div>
-            <button type="button" class="item-button buy-button">Заказать</button>
+            <button type="button" class="item__button button">Заказать</button>
           </li>
           <li class="list__item item">
-            <img class="item__image" src="#" width="140" height="144" alt="Изображение корма Cat Energy">
+            <img class="item__image" src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Изображение корма Cat Energy">
             <div class="item__table item-features">
               <p class="item-features__name">Cat Energy Pro 1000 г</p>
               <div class="item-features__data item-features__data--weight">
@@ -59,10 +62,10 @@
                 <p>1000 р.</p>
               </div>
             </div>
-            <button type="button" class="item-button buy-button">Заказать</button>
+            <button type="button" class="item__button button">Заказать</button>
           </li>
           <li class="list__item item">
-            <img class="item__image" src="#" width="140" height="144" alt="Изображение корма Cat Energy">
+            <img class="item__image" src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Изображение корма Cat Energy">
             <div class="item__table item-features">
               <p class="item-features__name">Cat Energy Pro 500 г</p>
               <div class="item-features__data item-features__data--weight">
@@ -78,10 +81,10 @@
                 <p>700 р.</p>
               </div>
             </div>
-            <button type="button" class="item-button buy-button">Заказать</button>
+            <button type="button" class="item__button button">Заказать</button>
           </li>
           <li class="list__item item">
-            <img class="item__image" src="#" width="140" height="144" alt="Изображение корма Cat Energy">
+            <img class="item__image" src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Изображение корма Cat Energy">
             <div class="item__table item-features">
               <p class="item-features__name">Cat Energy Pro 1000 г</p>
               <div class="item-features__data item-features__data--weight">
@@ -97,10 +100,10 @@
                 <p>1000 р.</p>
               </div>
             </div>
-            <button type="button" class="item-button buy-button">Заказать</button>
+            <button type="button" class="item__button button">Заказать</button>
           </li>
           <li class="list__item item">
-            <img class="item__image" src="#" width="140" height="144" alt="Изображение корма Cat Energy">
+            <img class="item__image" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Изображение корма Cat Energy">
             <div class="item__table item-features">
               <p class="item-features__name">Cat Energy Pro 500 г</p>
               <div class="item-features__data item-features__data--weight">
@@ -116,10 +119,10 @@
                 <p>400 р.</p>
               </div>
             </div>
-            <button type="button" class="item-button buy-button">Заказать</button>
+            <button type="button" class="item__button button">Заказать</button>
           </li>
           <li class="list__item item">
-            <img class="item__image" src="#" width="140" height="144" alt="Изображение корма Cat Energy">
+            <img class="item__image" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Изображение корма Cat Energy">
             <div class="item__table item-features">
               <p class="item-features__name">Cat Energy Pro 1000 г</p>
               <div class="item-features__data item-features__data--weight">
@@ -135,10 +138,10 @@
                 <p>700 р.</p>
               </div>
             </div>
-            <button type="button" class="item-button buy-button">Заказать</button>
+            <button type="button" class="item__button button">Заказать</button>
           </li>
           <li class="list__item item">
-            <img class="item__image" src="#" width="140" height="144" alt="Изображение корма Cat Energy">
+            <img class="item__image" src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Изображение корма Cat Energy">
             <div class="item__table item-features">
               <p class="item-features__name">Cat Energy Pro 500 г</p>
               <div class="item-features__data item-features__data--weight">
@@ -154,13 +157,13 @@
                 <p>500 р.</p>
               </div>
             </div>
-            <button type="button" class="item-button buy-button">Заказать</button>
+            <button type="button" class="item__button button">Заказать</button>
           </li>
-          <li class="list__item list__item--button show-more">
+          <li class="list__item item item--button">
             <div>
-              <button class="show-more__button">Показать ещё 100500 товаров</button>
-              <p class="show-more__description">На самом деле вкусов гораздо больше!</p>
-              <button type="button" class="show-more__show-all">Показать всё</button>
+              <p class="item-features__name">Показать ещё 100500 товаров</p>
+              <p class="item-features__data">На самом деле вкусов гораздо больше!</p>
+              <button type="button" class="show-more__show-all button button--show-more">Показать всё</button>
             </div>
           </li>
         </ul>
@@ -175,7 +178,7 @@
               <p>200 р.</p>
             </div>
             <div>
-              <button type="button" class="add-item__button buy-button">Заказать</button>
+              <button type="button" class="add-item__button button">Заказать</button>
             </div>
           </li>
           <li class="additional__item add-item">
@@ -185,7 +188,7 @@
               <p>50 р.</p>
             </div>
             <div>
-              <button type="button" class="add-item__button buy-button">Заказать</button>
+              <button type="button" class="add-item__button button">Заказать</button>
             </div>
           </li>
           <li class="additional__item add-item">
@@ -195,7 +198,7 @@
               <p>100 р.</p>
             </div>
             <div>
-              <button type="button" class="add-item__button buy-button">Заказать</button>
+              <button type="button" class="add-item__button button">Заказать</button>
             </div>
           </li>
           <li class="additional__item add-item">
@@ -205,7 +208,7 @@
               <p>300 р.</p>
             </div>
             <div>
-              <button type="button" class="add-item__button buy-button">Заказать</button>
+              <button type="button" class="add-item__button button">Заказать</button>
             </div>
           </li>
         </ul>
@@ -226,7 +229,7 @@
       </div>
       <div class="footer__map"></div>
       <div class="footer__logo footer-logo">
-        <img class="footer-logo__image" src="" width="128" height="24" alt="Логотип Cat Energy">
+        <img class="footer-logo__image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
       </div>
       <ul class="footer__social social">
         <li>
@@ -242,7 +245,7 @@
       <div class="footer__copyright copyright">
         <p class="copyright__developer">HTML Academy</p>
         <div class="copyright_logo developer-logo">
-          <img class="developer-logo__image" width="27" height="34" src="#" alt="Логотип разработчика HTML Academy">
+          <img class="developer-logo__image" width="27" height="34" src="img/htmlacademy.svg" alt="Логотип разработчика HTML Academy">
         </div>
       </div>
     </footer>

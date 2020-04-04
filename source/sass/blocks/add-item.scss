@@ -1,0 +1,19 @@
+.add-item {
+  padding: 10px 20px;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+.add-item__name {
+  font-family: $font-oswald;
+  color: #222222;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.add-item__feature {
+  font-family: $font-arial;
+  color: $font-grey;
+  font-size: 14px;
+}

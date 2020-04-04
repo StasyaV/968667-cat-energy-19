@@ -1,0 +1,32 @@
+.promo {
+  color: #ffffff;
+  font-family: $font-oswald;
+}
+
+.promo__background {
+  padding: 29px 35px;
+  margin-bottom: 135px;
+  width: 320px;
+  height: 305px;
+  background-image: url("/img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.promo__title {
+  font-size: 36px;
+}
+
+.promo__description {
+  font-size: 14px;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 280px;
+    height: 270px;
+    margin-top: 25px;
+    background-image: url("/img/index-can-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

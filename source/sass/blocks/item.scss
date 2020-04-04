@@ -1,0 +1,18 @@
+.item {
+  padding: 25px 20px;
+  font-family: $font-arial;
+  color: $font-grey;
+  font-size: 12px;
+  line-height: 16px;
+
+  border: 1px solid #ededed;
+}
+
+.item-features__name {
+  font-family: $font-oswald;
+  color: $font-black;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  text-transform: uppercase;
+}
