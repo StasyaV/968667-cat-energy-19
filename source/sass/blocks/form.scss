@@ -1,0 +1,40 @@
+.form-page {
+  font-family: $font-oswald;
+  color: $black-two;
+  text-transform: uppercase;
+  padding: 30px 20px;
+}
+
+.form-page__title {
+  @include title();
+}
+
+.form-page__description {
+  font-size: 14px;
+  color: $font-black;
+}
+
+.form label {
+  font-size: 16px;
+  color: $black-two;
+}
+
+input::placeholder {
+  font-size: 16px;
+  color: $font-grey;
+  text-transform: uppercase;
+  padding: 15px 16px;
+  border: 1px solid $border-color;
+}
+
+.form legend {
+  font-size: 24px;
+  color: $font-black;
+  text-transform: none;
+}
+
+.form__notice {
+  font-size: 14px;
+  color: $font-grey;
+  text-align: center;
+}
