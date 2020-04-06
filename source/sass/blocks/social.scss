@@ -31,3 +31,11 @@
     fill: $icon-color;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: 180px;
+    border: none;
+    padding: 0;
+  }
+}

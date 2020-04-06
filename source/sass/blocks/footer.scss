@@ -24,7 +24,41 @@
   padding: 25px 20px;
 }
 
-.footer-logo {
+.footer__logo {
   margin-top: 39px;
   margin-bottom: 31px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    width: $tablet-width;
+  }
+
+  .footer__contacts {
+    padding: 69px 71px;
+  }
+
+  .footer__contacts-invitation {
+    max-width: 200px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .footer__contacts-address {
+    max-width: 200px;
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 30px;
+  }
+
+  .footer__logo {
+    margin: 0;
+  }
 }

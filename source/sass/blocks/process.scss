@@ -24,3 +24,19 @@
 .process__item {
   margin: 20px 0;
 }
+
+@media (min-width: $tablet-width) {
+  .process {
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  .process__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .process__item {
+    width: 350px;
+  }
+}

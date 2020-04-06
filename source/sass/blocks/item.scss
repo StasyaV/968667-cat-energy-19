@@ -16,3 +16,11 @@
   text-align: left;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .item {
+    width: 324px;
+    background-color: $background-color;
+    margin-bottom: 140px;
+  }
+}

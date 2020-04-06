@@ -1,4 +1,7 @@
 .menu {
+  display: flex;
+  flex-direction: column;
+
   @include font-medium();
   font-size: 20px;
   line-height: 25px;
@@ -11,11 +14,11 @@
 }
 
 .menu__item {
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
   vertical-align: middle;
   width: 320px;
-  padding: 20px 0;
+  height: 49px;
+  line-height: 49px;
   margin: 0;
   border: 1px solid #ededed;
 
@@ -53,5 +56,30 @@
     width: 19px;
     height: 46px;
     background-image: url("../img/icon-close.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .menu-button {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  .menu {
+    flex-direction: row;
+    width: 500px;
+    justify-content: space-between;
+  }
+
+  .menu__item {
+    width: auto;
+    padding: 0 9px;
+    flex-grow: 1;
   }
 }
