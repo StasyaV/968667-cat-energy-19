@@ -40,3 +40,18 @@
     width: 350px;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .process {
+    @include center-container ();
+  }
+
+  .process__list {
+    justify-content: space-between;
+  }
+
+  .process__item {
+    width: 200px;
+    padding: 0;
+  }
+}

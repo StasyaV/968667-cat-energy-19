@@ -57,3 +57,14 @@
     order: 0;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .promo {
+    width: $desctop-width;
+    margin: 0 auto;
+  }
+
+  .promo__background {
+    display: flex;
+  }
+}

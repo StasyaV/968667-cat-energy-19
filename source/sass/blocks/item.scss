@@ -24,3 +24,17 @@
     margin-bottom: 140px;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .item {
+    width: 245px;
+  }
+
+  .item__button {
+    width: 169px;
+
+    &--show-more {
+      width: 169px;
+    }
+  }
+}

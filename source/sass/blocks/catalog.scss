@@ -26,3 +26,13 @@
     flex-wrap: wrap;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .catalog {
+    @include center-container ();
+  }
+
+  .products__list {
+    @include center-container ();
+  }
+}
