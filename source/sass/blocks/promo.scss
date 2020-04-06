@@ -1,19 +1,23 @@
 .promo {
   color: #ffffff;
   font-family: $font-oswald;
+  text-align: center;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .promo__background {
-  padding: 29px 35px;
+  padding: 29px 0;
   margin-bottom: 135px;
   width: 320px;
   height: 305px;
-  background-image: url("/img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
 
 .promo__title {
   font-size: 36px;
+  line-height: 36px;
 }
 
 .promo__description {
@@ -25,7 +29,7 @@
     width: 280px;
     height: 270px;
     margin-top: 25px;
-    background-image: url("/img/index-can-mobile@1x.png");
+    background-image: url("../img/index-can-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: center;
   }

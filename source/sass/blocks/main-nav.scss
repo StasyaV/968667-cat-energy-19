@@ -5,11 +5,14 @@
   text-align: center;
   text-transform: uppercase;
 
-  list-style: none;
+  @include list-reset();
+  width: 320px;
+  margin: 0 auto;
 }
 
 .menu__item {
-  display: block;
+  display: flex;
+  flex-direction: column;
   vertical-align: middle;
   width: 320px;
   padding: 20px 0;
@@ -32,5 +35,23 @@
 
   &--active {
     border-bottom: 2px solid #68b738;
+  }
+}
+
+.menu-button {
+  display: inline-block;
+  width: 25px;
+  height: 46px;
+  vertical-align: middle;
+  border: none;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+
+  &--open {
+    width: 19px;
+    height: 46px;
+    background-image: url("../img/icon-close.svg");
   }
 }

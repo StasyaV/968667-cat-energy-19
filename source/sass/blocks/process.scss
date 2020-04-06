@@ -4,17 +4,23 @@
   font-size: 14px;
   line-height: 18px;
   text-align: left;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .process__list {
-  list-style: none;
+  @include list-reset();
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
 }
 
 .process__title {
   @include title();
   margin: 32px 22px;
+  padding: 0 20px;
 }
 
 .process__item {
-  margin: 20px;
+  margin: 20px 0;
 }

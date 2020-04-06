@@ -1,8 +1,12 @@
 .features {
+  display: flex;
+  flex-direction: column;
   font-family: $font-arial;
   font-size: 14px;
   font-weight: normal;
   color: $font-grey;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .features__title {
