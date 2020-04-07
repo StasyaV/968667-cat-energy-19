@@ -3,9 +3,11 @@
 @import "vars.scss";
 @import "mixins.scss";
 @import "blocks/main.scss";
+@import "blocks/header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/button.scss";
 @import "blocks/catalog.scss";
+@import "blocks/form.scss";
 @import "blocks/products.scss";
 @import "blocks/item.scss";
 @import "blocks/other.scss";
@@ -19,4 +21,3 @@
 @import "blocks/footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
-@import "blocks/form.scss";

@@ -1,32 +1,70 @@
 .promo {
   color: #ffffff;
   font-family: $font-oswald;
+  text-align: center;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .promo__background {
-  padding: 29px 35px;
+  display: flex;
+  flex-direction: column;
+  padding: 29px 0;
   margin-bottom: 135px;
   width: 320px;
   height: 305px;
-  background-image: url("/img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
 
 .promo__title {
   font-size: 36px;
+  line-height: 36px;
 }
 
 .promo__description {
   font-size: 14px;
+}
 
-  &::after {
-    content: "";
-    display: inline-block;
-    width: 280px;
-    height: 270px;
-    margin-top: 25px;
-    background-image: url("/img/index-can-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-position: center;
+.promo__button {
+  order: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  .promo__background {
+    width: $tablet-width;
+    margin: 0 auto;
+    padding: 0;
+    background-image: none;
+    text-align: left;
+  }
+
+  .promo__title {
+    @include title();
+  }
+
+  .promo__description {
+    color: $font-black;
+    text-transform: uppercase;
+  }
+
+  .promo__button {
+    order: 0;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .promo {
+    width: $desctop-width;
+    margin: 0 auto;
+  }
+
+  .promo__background {
+    display: flex;
   }
 }

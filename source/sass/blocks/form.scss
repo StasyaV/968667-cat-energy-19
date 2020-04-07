@@ -3,6 +3,15 @@
   color: $black-two;
   text-transform: uppercase;
   padding: 30px 20px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .form-page__title {
@@ -37,4 +46,8 @@ input::placeholder {
   font-size: 14px;
   color: $font-grey;
   text-align: center;
+}
+
+.form__button {
+  margin: 0 auto;
 }

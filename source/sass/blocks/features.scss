@@ -1,8 +1,12 @@
 .features {
+  display: flex;
+  flex-direction: column;
   font-family: $font-arial;
   font-size: 14px;
   font-weight: normal;
   color: $font-grey;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .features__title {
@@ -23,4 +27,18 @@
   color: $font-black;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .features {
+    @include center-container ();
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

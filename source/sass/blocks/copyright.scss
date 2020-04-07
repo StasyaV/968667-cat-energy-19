@@ -1,4 +1,7 @@
 .copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 31px 20px;
   font-family: $font-arial;
   font-size: 16px;
   line-height: 16px;
@@ -12,5 +15,12 @@
 
   path {
     fill: $icon-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding: 0;
+    width: 200px;
   }
 }

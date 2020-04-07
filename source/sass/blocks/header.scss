@@ -1,0 +1,21 @@
+.head-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .header {
+    @include center-container ();
+  }
+}

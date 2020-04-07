@@ -16,3 +16,25 @@
   text-align: left;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .item {
+    width: 324px;
+    background-color: $background-color;
+    margin-bottom: 140px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .item {
+    width: 245px;
+  }
+
+  .item__button {
+    width: 169px;
+
+    &--show-more {
+      width: 169px;
+    }
+  }
+}
