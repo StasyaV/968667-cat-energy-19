@@ -37,7 +37,6 @@
 
 @media (min-width: $desctop-width) {
   .features {
-    @include center-container ();
     flex-direction: row;
     justify-content: space-between;
   }

@@ -32,3 +32,19 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.center-container {
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .center-container {
+    width: 640px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .center-container {
+    width: 1220px;
+  }
+}

@@ -14,8 +14,3 @@
   }
 }
 
-@media (min-width: $desctop-width) {
-  .header {
-    @include center-container ();
-  }
-}
