@@ -27,4 +27,21 @@
       width: 350px;
     }
   }
+
+  .other__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .other__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .other__title {
+    font-size: 36px;
+  }
 }
