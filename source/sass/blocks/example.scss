@@ -1,5 +1,6 @@
 .example {
-  width: 320px;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   padding: 33px 20px;
   font-family: $font-arial;
@@ -27,4 +28,50 @@
 .stat__total {
   color: $font-black;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background-color: #ffffff;
+  }
+
+  .example__stat {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .example__slider {
+    background-color: $background-color;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .example {
+    flex-direction: row;
+    padding: 0;
+    background-color: $background-color;
+  }
+
+
+  .example__block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__slider {
+    width: 70%;
+    margin-top: -180px;
+    background-color: transparent;
+  }
+
+  .example__wrap {
+    width: 40%;
+  }
+
+  .example__title {
+    margin-top: -100px;
+    margin-bottom: 60px;
+  }
 }

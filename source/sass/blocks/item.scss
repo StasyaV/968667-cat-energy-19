@@ -6,6 +6,11 @@
   line-height: 16px;
 
   border: 1px solid #ededed;
+
+  &:last-child,
+  &:nth-last-child(n-1) {
+    margin-bottom: 65px;
+  }
 }
 
 .item-features__name {

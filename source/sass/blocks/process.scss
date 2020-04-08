@@ -4,7 +4,6 @@
   font-size: 14px;
   line-height: 18px;
   text-align: left;
-  width: 320px;
   margin: 0 auto;
 }
 
@@ -27,31 +26,27 @@
 
 @media (min-width: $tablet-width) {
   .process {
-    width: $tablet-width;
     margin: 0 auto;
   }
 
   .process__list {
     flex-direction: row;
     flex-wrap: wrap;
-  }
-
-  .process__item {
-    width: 350px;
-  }
-}
-
-@media (min-width: $desctop-width) {
-  .process {
-    @include center-container ();
-  }
-
-  .process__list {
     justify-content: space-between;
   }
 
   .process__item {
+    width: 220px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .process__item {
     width: 200px;
     padding: 0;
+  }
+
+  .process {
+    margin-bottom: 217px;
   }
 }

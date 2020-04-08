@@ -14,6 +14,8 @@ body {
   line-height: 26px;
   font-family: $font-oswald;
   color: $font-grey;
+
+  background-color: #ffffff;
 }
 
 img {
@@ -39,7 +41,7 @@ img {
 
 @media (min-width: $tablet-width) {
   .center-container {
-    width: 640px;
+    width: 708px;
   }
 }
 

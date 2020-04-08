@@ -5,7 +5,6 @@
   font-size: 14px;
   font-weight: normal;
   color: $font-grey;
-  width: 320px;
   margin: 0 auto;
 }
 
@@ -29,11 +28,6 @@
   text-transform: uppercase;
 }
 
-@media (min-width: $tablet-width) {
-  .features {
-    width: $tablet-width;
-  }
-}
 
 @media (min-width: $desctop-width) {
   .features {
