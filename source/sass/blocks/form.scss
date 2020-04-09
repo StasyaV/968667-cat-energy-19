@@ -78,9 +78,9 @@ input::placeholder {
   }
 }
 
-.comments input {
-  width: 100%;
-  min-height: 150px;
+.comments__field {
+  max-width: 300px;
+  border: 1px solid $border-color;
 
   &::placeholder {
     border: none;
@@ -107,8 +107,9 @@ input::placeholder {
     width: 50%;
   }
 
-  .comments input {
-    min-height: 176px;
+  .comments__field {
+    max-width: 300px;
+    border: 1px solid $border-color;
   }
 
   .form__submit {
@@ -138,8 +139,8 @@ input::placeholder {
     justify-content: space-between;
   }
 
-  .comments input {
-    border: 1px solid $border-color;
+  .comments__field {
+    max-width: 300px;
   }
 
   .tell-more__item {

@@ -4,24 +4,11 @@
   color: $font-black;
 }
 
-.products__list {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 30px;
-}
-
 .catalog__title {
   @include title();
 }
 
 @media (min-width: $tablet-width) {
-  .products__list {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 0;
-  }
-
   .catalog__title {
     padding-left: 100px;
     margin-top: 83px;

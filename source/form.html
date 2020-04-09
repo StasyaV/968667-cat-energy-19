@@ -10,13 +10,13 @@
 
 <body>
   <header class="header">
-    <div class="head-wrapper">
+    <div class="head-wrapper container">
       <div class="header__logo logo">
         <img src="img/logo-mobile.svg" width="191" height="39" alt="Логотип компании">
       </div>
       <button type="button" class="menu-button menu-button--open"></button>
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav container">
       <ul class="main-nav__menu menu">
         <li class="menu__item"><a href="index.html">Главная</a></li>
         <li class="menu__item"><a href="catalog.html">Каталог продукции</a></li>
@@ -24,7 +24,7 @@
       </ul>
     </nav>
   </header>
-  <main class="form-page center-container">
+  <main class="form-page container">
     <h1 class="form-page__title page-title">Подбор программы</h1>
     <p class="form-page__description">Заполните анкету и мы подберём программу питания для вашего кота
     </p>
@@ -78,7 +78,9 @@
         <legend class="comments__title">Комментарий</legend>
         <label for="comment" class="visually-hidden">Здесь вы можете оставить дополнитеные комментарии и
           пожелания</label>
-        <input type="text" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота">
+        <textarea rows="10" cols="35" id="comment" name="comment" class="comments__field"
+          placeholder="Расскажите обо всех повадках кота">
+        </textarea>
       </fieldset>
       <fieldset class="form__tell-more tell-more">
         <legend class="tell-more__title">Дополнительно</legend>
@@ -118,7 +120,7 @@
       </p>
     </div>
     <div class="footer__map"></div>
-    <div class="footer__wrapper center-container">
+    <div class="footer__wrapper container">
       <div class="footer__logo footer-logo">
         <img class="footer-logo__image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
       </div>
