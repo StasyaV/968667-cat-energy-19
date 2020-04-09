@@ -10,16 +10,13 @@
 
 <body>
   <header class="header">
-    <div class="head-wrapper">
+    <div class="head-wrapper container">
       <div class="header__logo logo">
         <img src="img/logo-mobile.svg" width="191" height="39" alt="Логотип компании">
       </div>
       <button type="button" class="menu-button menu-button--open"></button>
     </div>
-    <div class="header__logo logo">
-      <img src="img/logo-mobile.svg" width="191" height="39" alt="Логотип компании">
-    </div>
-    <nav class="main-nav">
+    <nav class="main-nav container">
       <ul class="main-nav__menu menu">
         <li class="menu__item"><a href="index.html">Главная</a></li>
         <li class="menu__item"><a href="catalog.html">Каталог продукции</a></li>
@@ -27,76 +24,89 @@
       </ul>
     </nav>
   </header>
-  <main class="form-page">
+  <main class="form-page container">
     <h1 class="form-page__title page-title">Подбор программы</h1>
-    <p class="form-page__description">Заполните анкету и мы подберём программу питания для вашего кота</p>
+    <p class="form-page__description">Заполните анкету и мы подберём программу питания для вашего кота
+    </p>
     <form class="form-page__form form">
-      <fieldset class="form__info cat-info">
-        <legend class="visually-hidden">Заполните данные кота</legend>
-        <p class="cat-info__name">
-          <label for="name">Имя:</label>
-          <input type="text" id="name" name="name" placeholder="Барсик" required>
-        </p>
-        <p class="cat-info__weight">
-          <label for="weight">Вес (кг):</label>
-          <input type="number" id="weight" name="weight" placeholder="7" required>
-        </p>
-        <p class="cat-info__age">
-          <label for="age">Возраст (лет):</label>
-          <input type="number" id="age" name="age" placeholder="7">
-        </p>
-      </fieldset>
-      <fieldset class="form__goal goal">
-        <legend class="visually-hidden">Выберите цель программы</legend>
-        <p class="goal__variant">
-          <input type="radio" id="fat-burn" name="fat-burn">
-          <label for="fat-burn">Похудение</label>
-        </p>
-        <p class="goal__variant">
-          <input type="radio" id="mass-gain" name="mass-gain">
-          <label for="mass-gain">Набор массы</label>
-        </p>
-        <p class="goal__variant">
-          <input type="radio" id="dont-know" name="dont-know">
-          <label for="dont-know">Не знаю (нужен ваш совет)</label>
-        </p>
-      </fieldset>
+      <div class="form__about">
+        <fieldset class="form__info cat-info">
+          <legend class="visually-hidden">Заполните данные кота</legend>
+          <p class="cat-info__name">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" placeholder="Барсик" required>
+          </p>
+          <p class="cat-info__weight">
+            <label for="weight">Вес (кг):</label>
+            <input type="number" id="weight" name="weight" placeholder="7" required>
+          </p>
+          <p class="cat-info__age">
+            <label for="age">Возраст (лет):</label>
+            <input type="number" id="age" name="age" placeholder="7">
+          </p>
+        </fieldset>
+        <fieldset class="form__goal goal">
+          <legend class="visually-hidden">Выберите цель программы</legend>
+          <p class="goal__variant">
+            <input type="radio" id="fat-burn" name="fat-burn">
+            <label for="fat-burn">Похудение</label>
+          </p>
+          <p class="goal__variant">
+            <input type="radio" id="mass-gain" name="mass-gain">
+            <label for="mass-gain">Набор массы</label>
+          </p>
+          <p class="goal__variant">
+            <input type="radio" id="dont-know" name="dont-know">
+            <label for="dont-know">Не знаю (нужен ваш совет)</label>
+          </p>
+        </fieldset>
+      </div>
       <fieldset class="form__contacts">
         <legend class="form__contacts-title">Контактные данные (владельца кота)</legend>
-        <p class="form__contacts-data form__contacts-data--email">
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
-        </p>
-        <p class="form__contacts-data form__contacts-data--phone">
-          <label for="phone">Телефон</label>
-          <input type="number" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
-        </p>
+        <div class="form__contacts-block">
+          <p class="form__contacts-data form__contacts-data--email">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+          </p>
+          <p class="form__contacts-data form__contacts-data--phone">
+            <label for="phone">Телефон</label>
+            <input type="number" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+          </p>
+        </div>
       </fieldset>
-      <fieldset class="form__comments">
-        <legend class="visually-hidden">Дополнительные пожелания или комментарий можете оставить здесь</legend>
-        <label for="comment">Расскжаите обо всех повадках кота</label>
-        <input type="text" id="comment" name="comment">
+      <fieldset class="form__comments comments">
+        <legend class="comments__title">Комментарий</legend>
+        <label for="comment" class="visually-hidden">Здесь вы можете оставить дополнитеные комментарии и
+          пожелания</label>
+        <textarea rows="10" cols="35" id="comment" name="comment" class="comments__field"
+          placeholder="Расскажите обо всех повадках кота">
+        </textarea>
       </fieldset>
-      <fieldset class="form__tell-more">
-        <p>
-          <input type="checkbox" id="sugar" name="sugar">
-          <label for="sugar">Сахарозаменитель</label>
-        </p>
-        <p>
-          <input type="checkbox" id="water" name="water">
-          <label for="water">Питьевая вода</label>
-        </p>
-        <p>
-          <input type="checkbox" id="milk" name="milk">
-          <label for="milk">Молоко</label>
-        </p>
-        <p>
-          <input type="checkbox" id="vitamins" name="vitamins">
-          <label for="vitamins">Витамины</label>
-        </p>
+      <fieldset class="form__tell-more tell-more">
+        <legend class="tell-more__title">Дополнительно</legend>
+        <div class="tell-more__container">
+          <p class="tell-more__item">
+            <input type="checkbox" id="sugar" name="sugar">
+            <label for="sugar">Сахарозаменитель</label>
+          </p>
+          <p class="tell-more__item">
+            <input type="checkbox" id="water" name="water">
+            <label for="water">Питьевая вода</label>
+          </p>
+          <p class="tell-more__item">
+            <input type="checkbox" id="milk" name="milk">
+            <label for="milk">Молоко</label>
+          </p>
+          <p class="tell-more__item">
+            <input type="checkbox" id="vitamins" name="vitamins">
+            <label for="vitamins">Витамины</label>
+          </p>
+        </div>
       </fieldset>
-      <button type="submit" class="form__button button">Отправить заявку</button>
-      <p class="form__notice">* — Обязательные поля</p>
+      <div class="form__submit">
+        <button type="submit" class="form__button button">Отправить заявку</button>
+        <p class="form__notice">* — Обязательные поля</p>
+      </div>
     </form>
   </main>
   <footer class="footer">
@@ -110,7 +120,7 @@
       </p>
     </div>
     <div class="footer__map"></div>
-    <div class="footer__wrapper">
+    <div class="footer__wrapper container">
       <div class="footer__logo footer-logo">
         <img class="footer-logo__image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
       </div>
@@ -160,7 +170,6 @@
           </svg>
         </div>
       </div>
-    </div>
   </footer>
 </body>
 

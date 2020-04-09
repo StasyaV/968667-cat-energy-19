@@ -1,13 +1,7 @@
 .catalog {
-  width: 320px;
   margin: 0 auto;
   font-family: $font-oswald;
   color: $font-black;
-}
-
-.products__list {
-  display: flex;
-  flex-direction: column;
 }
 
 .catalog__title {
@@ -15,24 +9,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .catalog {
-    width: $tablet-width;
-  }
-
-  .products__list {
-    width: 708px;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-}
-
-@media (min-width: $desctop-width) {
-  .catalog {
-    @include center-container ();
-  }
-
-  .products__list {
-    @include center-container ();
+  .catalog__title {
+    padding-left: 100px;
+    margin-top: 83px;
+    margin-bottom: 150px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }

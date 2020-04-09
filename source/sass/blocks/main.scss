@@ -1,7 +1,12 @@
-* {
-  margin: 0;
-  padding: 0;
+html {
   box-sizing: border-box;
+  //  outline: 1px solid red;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
   outline: none;
 }
 
@@ -14,6 +19,8 @@ body {
   line-height: 26px;
   font-family: $font-oswald;
   color: $font-grey;
+
+  background-color: #ffffff;
 }
 
 img {
@@ -31,4 +38,22 @@ img {
   white-space: nowrap;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1220px;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 708px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .container {
+    width: 1220px;
+  }
 }
