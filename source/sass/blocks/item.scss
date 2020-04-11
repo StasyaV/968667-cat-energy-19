@@ -143,6 +143,11 @@
       .item-features__name {
         margin-top: 81px;
         margin-bottom: 34px;
+
+        &::before {
+          top: -100px;
+          left: 57px;
+        }
       }
     }
   }
