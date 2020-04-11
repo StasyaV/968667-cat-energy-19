@@ -1,0 +1,38 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 31px 20px;
+  font-family: $font-arial;
+  font-size: 16px;
+  line-height: 16px;
+  color: $font-grey;
+}
+
+.copyright__logo {
+  width: 27px;
+  height: 34px;
+  object-fit: contain;
+
+  path {
+    fill: $icon-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding: 0;
+
+    p {
+      margin-right: 23px;
+    }
+  }
+
+  .copyright__logo {
+    display: inline-block;
+    width: 27px;
+    height: 34px;
+    line-height: 48px;
+    vertical-align: middle;
+  }
+}

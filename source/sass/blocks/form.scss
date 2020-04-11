@@ -1,0 +1,153 @@
+.form-page {
+  font-family: $font-oswald;
+  color: $black-two;
+  text-transform: uppercase;
+  padding: 30px 20px;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  label {
+    font-size: 16px;
+    color: $black-two;
+  }
+
+  legend {
+    font-size: 24px;
+    color: $font-black;
+    text-transform: none;
+    margin-bottom: 30px;
+  }
+
+  fieldset {
+    margin-bottom: 30px;
+    border: none;
+  }
+
+  .form__goal {
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+  }
+
+  p {
+    margin-bottom: 14px;
+  }
+}
+
+.form-page__title {
+  @include title();
+}
+
+.form-page__description {
+  font-size: 14px;
+  color: $font-black;
+  margin-bottom: 35px;
+}
+
+
+input::placeholder {
+  font-size: 16px;
+  color: $font-grey;
+  text-transform: uppercase;
+  padding: 15px 16px;
+  border: 1px solid $border-color;
+}
+
+.form__notice {
+  font-size: 14px;
+  color: $font-grey;
+  text-align: center;
+}
+
+.form__button {
+  margin: 0 auto;
+}
+
+.cat-info p,
+.form__contacts p {
+  display: flex;
+  justify-content: space-between;
+
+  input {
+    flex-grow: 1;
+    margin-left: 17px;
+  }
+}
+
+.comments__field {
+  max-width: 300px;
+  border: 1px solid $border-color;
+
+  &::placeholder {
+    border: none;
+    text-align: left;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    width: 630px;
+
+    .form__goal {
+      border: 1px solid $border-color;
+    }
+  }
+
+  .tell-more__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .tell-more__item {
+    width: 50%;
+  }
+
+  .comments__field {
+    max-width: 300px;
+    border: 1px solid $border-color;
+  }
+
+  .form__submit {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .form__button {
+    margin-left: 0;
+    margin-right: 61px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .form {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .form__about {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__contacts-block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .comments__field {
+    max-width: 300px;
+  }
+
+  .tell-more__item {
+    width: auto;
+  }
+
+  .form__button {
+    width: 568px;
+  }
+}

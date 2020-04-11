@@ -1,0 +1,70 @@
+.promo {
+  color: #ffffff;
+  font-family: $font-oswald;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.promo__background {
+  display: flex;
+  flex-direction: column;
+  padding: 29px 0;
+  margin-bottom: 200px;
+  height: 305px;
+  background: no-repeat center url("../img/index-background-mobile@1x.jpg") #63a736;
+}
+
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.promo__description {
+  font-size: 14px;
+}
+
+.promo__button {
+  order: 1;
+}
+
+.promo__image {
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__background {
+    margin-left: 120px;
+    padding: 0;
+    background-image: none;
+    background-color: transparent;
+    text-align: left;
+  }
+
+  .promo__title {
+    margin-right: 190px;
+
+    @include title();
+    font-size: 60px;
+  }
+
+  .promo__description {
+    color: $font-black;
+    text-transform: uppercase;
+  }
+
+  .promo__button {
+    width: 245px;
+    order: 0;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .promo__background {
+    display: flex;
+    margin-bottom: 380px;
+  }
+
+  .promo__title {
+    width: 440px;
+  }
+}

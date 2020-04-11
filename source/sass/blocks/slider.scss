@@ -1,0 +1,14 @@
+.slider__toggle {
+  font-family: $font-oswald;
+  font-size: 16px;
+  color: $font-black;
+  text-transform: uppercase;
+}
+
+.slider__image {
+  display: flex;
+}
+
+.slider__slide--slide-1 {
+  margin-right: -320px;
+}

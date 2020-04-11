@@ -1,0 +1,61 @@
+.social {
+  @include list-reset();
+  display: flex;
+  justify-content: space-around;
+  padding: 24px 0;
+  margin: 0 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.social__link {
+  display: inline-block;
+  object-fit: contain;
+
+  &--vk {
+    width: 22px;
+    height: 12px;
+  }
+
+  &--insta {
+    width: 17px;
+    height: 17px;
+  }
+
+  &--fb {
+    width: 10px;
+    height: 19px;
+  }
+
+  path {
+    fill: $icon-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: 180px;
+    border: none;
+    padding: 0;
+  }
+
+  .social__link {
+    vertical-align: middle;
+    line-height: 23px;
+
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
+
+    &--insta {
+      width: 23px;
+      height: 23px;
+    }
+  }
+}

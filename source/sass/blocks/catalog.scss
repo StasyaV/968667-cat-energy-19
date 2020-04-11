@@ -1,0 +1,24 @@
+.catalog {
+  font-family: $font-oswald;
+  color: $font-black;
+  padding: 0;
+}
+
+.catalog__title {
+  @include title();
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__title {
+    margin-top: 65px;
+    margin-bottom: 110px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .catalog__list {
+    padding: 0 20px;
+  }
+}
