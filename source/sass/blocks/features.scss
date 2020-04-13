@@ -1,4 +1,4 @@
-.features {
+.features__container {
   display: flex;
   flex-direction: column;
   font-family: $font-arial;
@@ -157,10 +157,14 @@
   }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   .features {
+    margin-bottom: 65px;
+  }
+
+  .features__container {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0;
   }
 

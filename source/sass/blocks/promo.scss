@@ -3,15 +3,15 @@
   font-family: $font-oswald;
   text-align: center;
   margin: 0 auto;
+  background: no-repeat center url("../img/index-background-mobile@1x.jpg") #63a736;
 }
 
-.promo__background {
+.promo__block {
   display: flex;
   flex-direction: column;
   padding: 29px 0;
   margin-bottom: 200px;
   height: 305px;
-  background: no-repeat center url("../img/index-background-mobile@1x.jpg") #63a736;
 }
 
 .promo__title {
@@ -32,7 +32,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .promo__background {
+  .promo {
+    background: none;
+  }
+
+  .promo__block {
     margin-left: 120px;
     padding: 0;
     background-image: none;
@@ -58,9 +62,10 @@
   }
 }
 
-@media (min-width: $desctop-width) {
-  .promo__background {
+@media (min-width: $desktop-width) {
+  .promo__block {
     display: flex;
+    margin-left: auto;
     margin-bottom: 380px;
   }
 

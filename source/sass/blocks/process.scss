@@ -119,7 +119,7 @@
   }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   .process__item {
     width: 200px;
     padding: 0;
@@ -133,5 +133,9 @@
   .process {
     margin-bottom: 217px;
     border-bottom: none;
+  }
+
+  .process__title {
+    margin-bottom: 60px;
   }
 }

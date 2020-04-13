@@ -1,5 +1,5 @@
 .item {
-  padding: 25px 10px;
+  padding: 25px 20px;
   font-family: $font-arial;
   color: $font-grey;
   font-size: 12px;
@@ -10,8 +10,6 @@
 
   &--button {
     position: relative;
-    padding-top: 60px;
-    padding-right: 25px;
     text-align: center;
 
     p {
@@ -19,24 +17,19 @@
       text-align: center;
     }
 
-    .item-features__name {
-      position: relative;
-
-      &::before {
-        position: absolute;
-        top: -50px;
-        left: 125px;
-        content: "";
-        display: block;
-        width: 31px;
-        height: 31px;
-        background-image: url("../img/icon-plus-mobile.svg");
-        background-repeat: no-repeat;
-        opacity: 0.2;
-      }
+    .item__image {
+      display: block;
+      width: 31px;
+      height: 31px;
+      margin: 0 auto;
+      background-image: url("../img/icon-plus-mobile.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.2;
     }
   }
 }
+
 
 .item-features__name {
   font-family: $font-oswald;
@@ -47,7 +40,7 @@
   text-transform: uppercase;
 }
 
-.item__container {
+.item__info {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -81,33 +74,30 @@
       background-color: transparent;
       border: 1px solid $border-color;
 
+      .item__image {
+        width: 61px;
+        height: 61px;
+        background-image: url("../img/icon-plus.svg");
+      }
+
       p {
         padding: 0 40px;
         border-bottom: none;
       }
 
       .item-features__name {
-        margin-top: 100px;
         margin-bottom: 28px;
-
-        &::before {
-          top: -110px;
-          left: 100px;
-          width: 61px;
-          height: 61px;
-          background-image: url("../img/icon-plus.svg");
-          background-repeat: no-repeat;
-        }
       }
     }
   }
 
-  .item__button--show-more {
-    margin-top: 88px;
+  .item__action {
+    margin-top: auto;
   }
 
-  .item__container {
+  .item__info {
     flex-direction: column;
+    margin-top: auto;
     margin-bottom: 33px;
   }
 
@@ -131,7 +121,13 @@
   }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
+  .item__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   .item {
     width: 245px;
 
@@ -141,13 +137,7 @@
       }
 
       .item-features__name {
-        margin-top: 81px;
         margin-bottom: 34px;
-
-        &::before {
-          top: -100px;
-          left: 57px;
-        }
       }
     }
   }

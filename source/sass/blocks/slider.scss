@@ -7,6 +7,8 @@
 
 .slider__image {
   display: flex;
+  position: relative;
+  z-index: 5;
 }
 
 .slider__slide--slide-1 {
