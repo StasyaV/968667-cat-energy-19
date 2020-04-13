@@ -4,3 +4,13 @@
   color: $font-black;
   text-transform: uppercase;
 }
+
+.slider__image {
+  display: flex;
+  position: relative;
+  z-index: 5;
+}
+
+.slider__slide--slide-1 {
+  margin-right: -320px;
+}

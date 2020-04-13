@@ -1,6 +1,7 @@
 .copyright {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 31px 20px;
   font-family: $font-arial;
   font-size: 16px;
@@ -21,6 +22,17 @@
 @media (min-width: $tablet-width) {
   .copyright {
     padding: 0;
-    width: 200px;
+
+    p {
+      margin-right: 23px;
+    }
+  }
+
+  .copyright__logo {
+    display: inline-block;
+    width: 27px;
+    height: 34px;
+    line-height: 48px;
+    vertical-align: middle;
   }
 }

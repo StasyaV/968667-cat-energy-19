@@ -38,4 +38,24 @@
     border: none;
     padding: 0;
   }
+
+  .social__link {
+    vertical-align: middle;
+    line-height: 23px;
+
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
+
+    &--insta {
+      width: 23px;
+      height: 23px;
+    }
+  }
 }
