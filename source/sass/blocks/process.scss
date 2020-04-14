@@ -7,6 +7,10 @@
   margin: 0 auto;
 }
 
+.process__container {
+  padding: 0 20px;
+}
+
 .process__list {
   @include list-reset();
   display: flex;

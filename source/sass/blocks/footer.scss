@@ -28,6 +28,12 @@
   margin-bottom: 31px;
 }
 
+.footer__map {
+  height: 400px;
+  margin-top: -30px;
+  background: no-repeat center url("../img/bg-map-mobile@1x.png") #fcf7f1;
+}
+
 @media (min-width: $tablet-width) {
   .footer {
     width: 100%;
@@ -61,17 +67,28 @@
   .footer__logo {
     margin: 0;
   }
+
+  .footer__map {
+    background: no-repeat center url("../img/bg-map-tablet@1x.png") #fcf7f1;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .footer {
     width: 100%;
+    position: relative;
   }
 
   .footer__contacts {
+    position: absolute;
+    top: 95px;
     width: 570px;
     height: 201px;
     padding: 35px 40px;
     margin-left: 110px;
+  }
+
+  .footer__map {
+    background: no-repeat center url("../img/bg-map-desktop@1x.png") #fcf7f1;
   }
 }

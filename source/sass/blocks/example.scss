@@ -8,6 +8,10 @@
   background-color: $background-color;
 }
 
+.example__block {
+  padding: 0 20px;
+}
+
 .example__title {
   @include title();
   margin: 20px 0;
