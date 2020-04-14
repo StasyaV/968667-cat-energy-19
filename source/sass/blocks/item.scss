@@ -70,6 +70,10 @@
     text-align: center;
     background-color: $background-color;
 
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
     &--button {
       background-color: transparent;
       border: 1px solid $border-color;
@@ -130,6 +134,10 @@
 
   .item {
     width: 245px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
 
     &--button {
       p {

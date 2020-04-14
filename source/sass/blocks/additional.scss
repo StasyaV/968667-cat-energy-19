@@ -1,3 +1,8 @@
 .additional {
   @include list-reset();
+  margin: 0;
+}
+
+@media (min-width: $desktop-width) {
+  flex-grow: 1;
 }
