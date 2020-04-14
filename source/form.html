@@ -66,7 +66,7 @@
           </fieldset>
         </div>
         <fieldset class="form__contacts">
-          <legend class="form__contacts-title">Контактные данные (владельца кота)</legend>
+          <legend class="form__contacts-title">Контактные данные<br> (владельца кота)</legend>
           <div class="form__contacts-block">
             <p class="form__contacts-data form__contacts-data--email">
               <label for="email">E-mail:*</label>
@@ -82,13 +82,15 @@
           <legend class="comments__title">Комментарий</legend>
           <label for="comment" class="visually-hidden">Здесь вы можете оставить дополнитеные комментарии и
             пожелания</label>
-          <textarea rows="10" cols="35" id="comment" name="comment" class="comments__field"
-            placeholder="Расскажите обо всех повадках кота">
-        </textarea>
+          <div class="comments__block">
+            <textarea rows="10" cols="35" id="comment" name="comment" class="comments__field"
+              placeholder="Расскажите обо всех повадках кота">
+            </textarea>
+          </div>
         </fieldset>
         <fieldset class="form__tell-more tell-more">
           <legend class="tell-more__title">Дополнительно</legend>
-          <div class="tell-more__container">
+          <div class="tell-more__block">
             <p class="tell-more__item">
               <input type="checkbox" class="visually-hidden" id="sugar" name="sugar" checked>
               <label for="sugar">Сахарозаменитель</label>
