@@ -28,7 +28,10 @@ img {
   height: auto;
 }
 
-.visually-hidden {
+.visually-hidden,
+.visually-hidden:not(:focus):not(:active),
+input[type="radio"].visually-hidden,
+input[type="checkbox"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;

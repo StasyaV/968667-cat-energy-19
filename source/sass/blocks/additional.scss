@@ -4,5 +4,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  flex-grow: 1;
+  .additional {
+    flex-grow: 1;
+  }
 }
