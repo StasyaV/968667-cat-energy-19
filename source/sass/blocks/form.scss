@@ -186,7 +186,9 @@ input[type="checkbox"]:checked + label::after {
   }
 }
 
-.form__contacts-title {
+.form__contacts-title,
+.comments__title,
+.tell-more__title {
   &::after {
     content: "";
     display: inline-block;
@@ -202,27 +204,17 @@ input[type="checkbox"]:checked + label::after {
 
 .comments__title {
   &::after {
-    content: "";
-    display: inline-block;
     width: 158px;
-    height: 3px;
+    margin-top: 0;
     margin-left: 25px;
-    line-height: 24px;
-    vertical-align: middle;
-    background-color: $base-color;
   }
 }
 
 .tell-more__title {
   &::after {
-    content: "";
-    display: inline-block;
     width: 136px;
-    height: 3px;
+    margin-top: 0;
     margin-left: 27px;
-    line-height: 24px;
-    vertical-align: middle;
-    background-color: $base-color;
   }
 }
 
@@ -328,8 +320,60 @@ input[type="checkbox"]:checked + label::after {
 
 @media (min-width: $desktop-width) {
   .form {
-    width: 1220px;
-    margin: 0 auto;
+    margin-bottom: 82px;
+
+    legend {
+      margin-left: 0;
+    }
+  }
+
+  .form-page__title {
+    margin-left: 108px;
+  }
+
+  .form__info,
+  .form__goal {
+    flex-grow: 1;
+  }
+
+  .form-page__description,
+  .cat-info__name,
+  .cat-info__weight,
+  .cat-info__age {
+    margin-left: 110px;
+  }
+
+  .form__goal {
+    margin-right: 110px;
+  }
+
+  .form__contacts-block,
+  .comments__block,
+  .tell-more__block {
+    margin: 0 110px;
+  }
+
+  .form__about,
+  .form__contacts-block,
+  .comments__block,
+  .tell-more__block {
+    padding: 0;
+  }
+
+  .form__info {
+    margin-right: 80px;
+
+    p {
+      margin-bottom: 20px;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   .form__about {
@@ -340,10 +384,18 @@ input[type="checkbox"]:checked + label::after {
   .form__contacts-block {
     display: flex;
     justify-content: space-between;
+
+    p {
+      flex-grow: 1;
+
+      &:first-of-type {
+        margin-right: 80px;
+      }
+    }
   }
 
   .comments__field {
-    max-width: 300px;
+    width: 100%;
   }
 
   .tell-more__item {
@@ -352,5 +404,36 @@ input[type="checkbox"]:checked + label::after {
 
   .form__button {
     width: 568px;
+  }
+
+  .form__submit {
+    margin-left: 110px;
+  }
+
+  .form__contacts-title,
+  .comments__title,
+  .tell-more__title {
+    &::before {
+      width: 53px;
+      margin-right: 60px;
+    }
+  }
+
+  .form__contacts-title {
+    &::after {
+      width: 956px;
+    }
+  }
+
+  .comments__title {
+    &::after {
+      width: 1177px;
+    }
+  }
+
+  .tell-more__title {
+    &::after {
+      width: 1155px;
+    }
   }
 }
