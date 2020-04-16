@@ -37,7 +37,9 @@
     min-width: 1220px;
     margin: 0 auto;
     margin-top: 60px;
+  }
 
+  .header__index {
     &--background::after {
       position: absolute;
       top: 0;
@@ -48,6 +50,19 @@
       width: 50%;
       height: 696px;
       background: no-repeat center right url("../img/index-background-desktop@1x.jpg") #65a93c;
+
+      // content: "";
+      // position: absolute;
+      // top: 0;
+      // right: 0;
+      // bottom: 0;
+      // width: calc(100% / 2 - 40px);
+      // z-index: -1;
+      // background-color: #65a93c;
+      // background-image: url("../img/index-background-desktop@1x.jpg");
+      // background-size: 680px auto;
+      // background-repeat: no-repeat;
+      // background-position: right bottom;
     }
   }
 }

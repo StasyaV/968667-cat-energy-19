@@ -13,23 +13,27 @@
     <div class="header__container container">
       <div class="head-wrapper">
         <div class="header__logo logo">
-          <img src="img/logo-mobile.svg" class="logo__image" width="191" height="39" alt="Логотип компании">
+          <a href="index.html">
+            <img src="img/logo-mobile.svg" class="logo__image" width="191" height="39" alt="Логотип компании">
+          </a>
         </div>
         <button type="button" class="menu-button menu-button--closed menu-button--none"></button>
       </div>
-      <nav class="main-nav main-nav--no-js main-nav--closed">
+      <nav class="main-nav main-nav--no-js main-nav--closed main-nav--background">
         <ul class="main-nav__menu menu">
-          <li class="menu__item"><a href="index.html">Главная</a>
+          <li class="menu__item"><a class="menu__link" href="index.html">Главная</a>
           </li>
-          <li class="menu__item"><a href="catalog.html">Каталог продукции</a></li>
-          <li class="menu__item menu__item--active"><a>Подбор программы</a></li>
+          <li class="menu__item"><a class="menu__link" href="catalog.html">Каталог
+              продукции</a></li>
+          <li class="menu__item"><a class="menu__link  menu__link--active">Подбор программы</a>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
   <main class="form-page">
-    <h1 class="form-page__title page-title">Подбор программы</h1>
-    <div class="form-page__container">
+    <div class="form-page__container container">
+      <h1 class="form-page__title page-title">Подбор программы</h1>
       <p class="form-page__description">Заполните анкету и мы подберём программу питания для вашего кота
       </p>
       <form class="form-page__form form">
@@ -66,7 +70,7 @@
           </fieldset>
         </div>
         <fieldset class="form__contacts">
-          <legend class="form__contacts-title">Контактные данные<br> (владельца кота)</legend>
+          <legend class="form__contacts-title title-line">Контактные данные<br> (владельца кота)</legend>
           <div class="form__contacts-block">
             <p class="form__contacts-data form__contacts-data--email">
               <label for="email">E-mail:*</label>
@@ -79,7 +83,7 @@
           </div>
         </fieldset>
         <fieldset class="form__comments comments">
-          <legend class="comments__title">Комментарий</legend>
+          <legend class="comments__title title-line">Комментарий</legend>
           <div class="comments__block">
             <label for="comment" class="visually-hidden">Здесь вы можете оставить дополнитеные комментарии и
               пожелания</label>
@@ -89,7 +93,7 @@
           </div>
         </fieldset>
         <fieldset class="form__tell-more tell-more">
-          <legend class="tell-more__title">Дополнительно</legend>
+          <legend class="tell-more__title title-line">Дополнительно</legend>
           <div class="tell-more__block">
             <p class="tell-more__item">
               <input type="checkbox" class="visually-hidden" id="sugar" name="sugar" checked>

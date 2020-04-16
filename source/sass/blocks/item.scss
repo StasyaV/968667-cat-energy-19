@@ -8,7 +8,7 @@
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
 
-  &--button {
+  &--show-more {
     position: relative;
     text-align: center;
 
@@ -74,7 +74,7 @@
       margin-right: 0;
     }
 
-    &--button {
+    &--show-more {
       background-color: transparent;
       border: 1px solid $border-color;
 
@@ -135,11 +135,15 @@
   .item {
     width: 245px;
 
+    &:nth-child(2n) {
+      margin-right: 40px;
+    }
+
     &:nth-child(4n) {
       margin-right: 0;
     }
 
-    &--button {
+    &--show-more {
       p {
         padding: 0;
       }
@@ -157,7 +161,7 @@
   .item__button {
     min-width: 169px;
 
-    &--show-more {
+    &--plus {
       min-width: 169px;
     }
   }

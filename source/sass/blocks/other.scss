@@ -6,39 +6,12 @@
   line-height: 24px;
   color: $font-black;
   font-weight: normal;
-
-  &::after {
-    content: "";
-    display: inline-block;
-    height: 3px;
-    width: calc(100% - 248px);
-    margin-left: 21px;
-    line-height: 24px;
-    vertical-align: middle;
-    background-color: $base-color;
-  }
 }
 
 @media (min-width: $tablet-width) {
   .other__title {
     margin-bottom: 75px;
     padding-left: 0;
-
-    &::before {
-      content: "";
-      display: inline-block;
-      line-height: 36px;
-      vertical-align: middle;
-      min-width: 20px;
-      height: 3px;
-      margin-right: 20px;
-      background-color: $base-color;
-    }
-
-    &::after {
-      margin-right: 0;
-      width: calc(100% - 288px);
-    }
   }
 
   .other__container {
@@ -60,14 +33,5 @@
 
   .other__title {
     font-size: 36px;
-
-    &::before {
-      margin-right: 25px;
-    }
-
-    &::after {
-      margin-left: 25px;
-      width: calc(100% - 408px);
-    }
   }
 }

@@ -9,20 +9,25 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="header__container header__container--background container">
+  <header class="header header__index--background ">
+    <div class="header__container container">
       <div class="head-wrapper">
         <div class="header__logo logo">
-          <img src="img/logo-mobile.svg" class="logo__image" width="191" height="39" alt="Логотип компании">
+          <a>
+            <img src="img/logo-mobile.svg" class="logo__image" width="191" height="39" alt="Логотип компании">
+          </a>
         </div>
         <button type="button" class="menu-button menu-button--closed menu-button--none"></button>
       </div>
       <nav class="main-nav main-nav--no-js main-nav--closed main-nav--background">
         <ul class="main-nav__menu menu">
-          <li class="menu__item menu__item--active menu__item--desctop-index menu__item--desctop-active"><a>Главная</a>
+          <li class="menu__item"><a
+              class="menu__link menu__link--active menu__link--desktop-index menu__link--desktop-active">Главная</a>
           </li>
-          <li class="menu__item menu__item--desctop-index"><a href="catalog.html">Каталог продукции</a></li>
-          <li class="menu__item menu__item--desctop-index"><a href="form.html">Подбор программы</a></li>
+          <li class="menu__item"><a class="menu__link menu__link--desktop-index" href="catalog.html">Каталог
+              продукции</a></li>
+          <li class="menu__item"><a class="menu__link menu__link--desktop-index" href="form.html">Подбор программы</a>
+          </li>
         </ul>
       </nav>
     </div>
