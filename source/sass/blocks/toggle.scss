@@ -60,17 +60,17 @@
     padding-left: 20px;
     position: relative;
 
-    &::after {
-      position: absolute;
-      background-color: $cats-background;
-      content: "";
-      display: block;
-      width: 768px;
-      height: 462px;
-      top: -255px;
-      left: -221px;
-      z-index: -1;
-    }
+    // &::after {
+    //   position: absolute;
+    //   background-color: $cats-background;
+    //   content: "";
+    //   display: block;
+    //   width: 768px;
+    //   height: 462px;
+    //   top: -255px;
+    //   left: -221px;
+    //   z-index: -1;
+    // }
   }
 
   .toggle__point {

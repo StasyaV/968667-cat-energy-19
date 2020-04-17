@@ -17,15 +17,22 @@
   color: $font-black;
   text-transform: uppercase;
   position: relative;
+  margin-left: 72px;
+}
 
+.features__block {
+  padding: 0 20px;
+  padding-bottom: 22px;
+  background-color: $background-color;
+  position: relative;
 
   &::before {
     content: "";
+    position: absolute;
+    top: 10px;
     display: block;
     width: 50px;
     height: 50px;
-    margin-right: 20px;
-
     background-color: $base-color;
     border-radius: 50%;
   }
@@ -37,28 +44,23 @@
     height: 49px;
     background-image: url("../img/icon-cat-slim.svg");
     background-repeat: no-repeat;
-    background-position: 10px center;
     background-size: auto;
     position: absolute;
+    top: 10px;
+    left: 28px;
     z-index: 1;
   }
 
   &--mass-gain::after {
-    left: -10px;
+    left: 9px;
+    top: 23px;
     width: 70px;
     height: 27px;
     background-image: url("../img/icon-cat-pro.svg");
     background-position: center;
   }
-}
-
-.features__block {
-  padding: 0 20px;
-  padding-bottom: 22px;
-  background-color: $background-color;
 
   &--fat-burn {
-    margin-top: 22px;
     margin-bottom: 20px;
   }
 }
@@ -87,14 +89,10 @@
     margin-bottom: 29px;
     font-size: 36px;
     line-height: 37px;
-
-    &::before,
-    &::after {
-      display: none;
-    }
   }
 
   .features__description {
+    width: 384px;
     font-size: 16px;
   }
 
@@ -107,52 +105,32 @@
   }
 
   .features__block {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-top: 70px;
     padding-right: 60px;
     padding-bottom: 60px;
     padding-left: 55px;
 
-    div {
-      width: 340px;
+    &::before {
+      width: 200px;
+      height: 200px;
+      right: 30px;
+      top: 62px;
     }
 
     &::after {
-      content: "";
-      display: block;
-      width: 200px;
-      height: 200px;
-      margin-left: 20px;
-
-      background-color: $base-color;
-      border-radius: 50%;
-    }
-
-    &::before {
-      position: absolute;
-      right: 92px;
-      top: 82px;
-      content: "";
-      display: block;
       width: 141px;
       height: 194px;
-      background-image: url("../img/icon-cat-slim.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: auto;
-      z-index: 1;
+      top: 52px;
+      left: 534px;
     }
 
-    &--mass-gain::before {
-      width: 268px;
-      height: 113px;
-      right: 27px;
-      top: 137px;
-      background-image: url("../img/icon-cat-pro.svg");
-      background-position: center;
+    &--mass-gain {
+      &::after {
+        left: 442px;
+        top: 106px;
+        width: 268px;
+        height: 113px;
+      }
     }
   }
 }
@@ -170,39 +148,36 @@
 
   .features__block {
     margin: 0;
-    padding-right: 0;
 
-    div {
-      width: 490px;
+    &::before {
+      width: 100px;
+      height: 100px;
+      top: 28px;
+      left: 55px;
     }
 
-    &::before,
     &::after {
-      display: none;
+      top: 29px;
+      left: 76px;
+      width: 71px;
+      height: 97px;
+    }
+
+    &--mass-gain {
+      &::after {
+        top: 52px;
+        left: 40px;
+        width: 134px;
+        height: 57px;
+      }
     }
   }
 
-  .features__title::before,
-  .features__title::after {
-    display: block;
+  .features__description {
+    width: 462px;
   }
 
-  .features__title::before {
-    width: 100px;
-    height: 100px;
-    margin-right: 64px;
-  }
-
-  .features__title--fat-burn::after {
-    left: 16px;
-    width: 71px;
-    height: 97px;
-    background-position: center;
-  }
-
-  .features__title--mass-gain::after {
-    left: -16px;
-    width: 134px;
-    height: 57px;
+  .features__title {
+    margin-left: 150px;
   }
 }
