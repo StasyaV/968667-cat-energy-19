@@ -77,6 +77,12 @@
     }
   }
 
+  .add-item__info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   .add-item__button {
     width: 633px;
   }
@@ -164,6 +170,7 @@
     justify-content: space-between;
     align-items: center;
     flex-grow: 1;
+    width: auto;
 
     p {
       margin: 0;

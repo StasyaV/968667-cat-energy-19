@@ -98,10 +98,19 @@
   .footer__contacts {
     position: absolute;
     top: 95px;
+    left: 104px;
     width: 570px;
     height: 201px;
     padding: 35px 40px;
     background-color: #ffffff;
+  }
+
+  .footer__contacts-block {
+    justify-content: flex-start;
+
+    p:first-child {
+      margin-right: 54px;
+    }
   }
 
   .footer__map {
