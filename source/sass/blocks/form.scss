@@ -3,6 +3,7 @@
   color: $black-two;
   text-transform: uppercase;
   margin: 0 auto;
+  margin-bottom: 31px;
 }
 
 .form {
@@ -25,9 +26,8 @@
   }
 
   fieldset {
-    margin-bottom: 30px;
     border: none;
-    padding: 0;
+    padding: 21px 20px;
   }
 
   .form__goal {
@@ -36,10 +36,14 @@
   }
 
   p {
+    margin: 0;
     margin-bottom: 14px;
     position: relative;
-    padding: 0 20px;
   }
+}
+
+.form__about {
+  margin-bottom: 31px;
 }
 
 input[type="radio"] + label::before {
@@ -104,12 +108,15 @@ input[type="checkbox"]:checked + label::after {
 .form-page__title {
   @include title();
   text-transform: none;
+  margin: 0;
   margin-left: 20px;
+  margin-bottom: 35px;
 }
 
 .form-page__description {
   font-size: 14px;
   color: $font-black;
+  margin: 0;
   margin-left: 20px;
   margin-bottom: 35px;
 }
@@ -257,6 +264,10 @@ input[type="checkbox"]:checked + label::after {
     legend {
       margin-left: 0;
     }
+
+    .cat-info {
+      padding: 0;
+    }
   }
 
   .form__info,
@@ -282,6 +293,12 @@ input[type="checkbox"]:checked + label::after {
       &:last-child {
         margin-bottom: 0;
       }
+    }
+  }
+
+  .form__goal {
+    p:last-child {
+      margin-bottom: 0;
     }
   }
 

@@ -21,6 +21,10 @@
 
 .footer__contacts {
   background-color: $background-color;
+  padding-top: 31px;
+  padding-right: 20px;
+  padding-bottom: 26px;
+  padding-left: 20px;
 
   &--index {
     background-color: #ffffff;
@@ -31,23 +35,21 @@
   display: flex;
   justify-content: space-between;
   text-align: left;
-  padding: 25px 20px;
+
+  p {
+    margin: 0;
+  }
 }
 
 .footer__logo {
-  margin-top: 39px;
   margin-bottom: 31px;
 }
 
 .footer__map {
   height: 400px;
-  margin-top: -30px;
   background: no-repeat center url("../img/bg-map-mobile@1x.png") $background-color;
 }
 
-.footer__container {
-  padding: 0 20px;
-}
 
 @media (min-width: $tablet-width) {
   .footer {
@@ -98,7 +100,7 @@
   .footer__contacts {
     position: absolute;
     top: 95px;
-    left: 104px;
+    left: 160px;
     width: 570px;
     height: 201px;
     padding: 35px 40px;

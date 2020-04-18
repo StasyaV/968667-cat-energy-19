@@ -54,10 +54,12 @@
     padding-right: 20px;
     position: relative;
     z-index: 1;
+    margin: 0;
   }
 
   .toggle__after {
     padding-left: 20px;
+    margin: 0;
     position: relative;
 
     // &::after {
