@@ -29,16 +29,16 @@
 
 .menu__item {
   border: 1px solid $border-color;
+  border-bottom: none;
 }
 
 .menu__link {
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
   height: 49px;
-  line-height: 49px;
   margin: 0;
   color: $font-black;
   text-decoration: none;
+  padding: 13px 20px;
 
   &:hover,
   &:focus {

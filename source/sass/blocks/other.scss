@@ -16,15 +16,12 @@
   .other__title {
     margin-bottom: 75px;
     padding-left: 0;
+    font-size: 36px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .other {
     margin-bottom: 86px;
-  }
-
-  .other__title {
-    font-size: 36px;
   }
 }

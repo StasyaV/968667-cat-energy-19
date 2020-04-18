@@ -12,6 +12,11 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products__list {
+    margin-bottom: 89px;
   }
 }
