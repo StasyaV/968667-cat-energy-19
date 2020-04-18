@@ -4,34 +4,34 @@
   padding-right: 25px;
   background-color: #ffffff;
 
-  &::after {
+  &::after,
+  &::before {
     content: "";
     position: absolute;
     display: block;
     top: 0;
-    left: 0;
     width: 100vw;
     height: 3px;
     margin-top: calc(1em / 2 + 3px);
     background-color: $base-color;
     z-index: -1;
   }
+
+  &::after {
+    left: 0;
+  }
+
+  &::before {
+    right: 100%;
+    margin-right: 25px;
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .title-line {
     &::before {
-      content: "";
-      position: absolute;
       display: block;
-      top: 0;
-      right: 100%;
-      width: 100vw;
-      height: 3px;
-      margin-right: 25px;
-      margin-top: calc(1em / 2 + 3px);
-      background-color: $base-color;
-      z-index: -1;
     }
   }
 }
