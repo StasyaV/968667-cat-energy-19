@@ -19,13 +19,11 @@
   background-color: $background-color;
 }
 
-.footer__contacts {
+.footer__container {
   position: relative;
-  height: 472px;
-  padding-top: 31px;
-  padding-right: 20px;
-  padding-bottom: 26px;
-  padding-left: 20px;
+}
+
+.footer__contacts {
   background-color: $background-color;
 
   &--index {
@@ -37,6 +35,10 @@
   display: flex;
   justify-content: space-between;
   text-align: left;
+  padding-top: 31px;
+  padding-right: 20px;
+  padding-bottom: 26px;
+  padding-left: 20px;
 
   p {
     margin: 0;
@@ -48,12 +50,8 @@
 }
 
 .footer__map {
-  position: absolute;
-  top: 125px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 320px;
   height: 347px;
+  margin: 0 auto;
   background: no-repeat center url("../img/bg-map-mobile@1x.png") $background-color;
 }
 
@@ -62,12 +60,6 @@
   .footer {
     width: 100%;
     position: relative;
-  }
-
-  .footer__contacts {
-    padding: 69px 0;
-    margin: 0 auto;
-    height: 597px;
   }
 
   .footer__contacts-invitation {
@@ -83,6 +75,17 @@
     text-align: right;
   }
 
+  .footer__contacts-block {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .footer__container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
   .footer__block {
     display: flex;
     justify-content: space-between;
@@ -95,10 +98,7 @@
   }
 
   .footer__map {
-    top: 200px;
-    width: 100%;
-    height: 400px;
-    background: no-repeat center url("../img/bg-map-tablet@1x.png") $background-color;
+    background-image: url("../img/bg-map-tablet@1x.png");
   }
 }
 
@@ -108,35 +108,18 @@
     position: relative;
   }
 
-  .footer__contacts {
-    position: relative;
-    width: 570px;
-    height: 201px;
-    padding: 35px 40px;
-    margin-left: 80px;
-    margin-top: 100px;
-    background-color: #ffffff;
-  }
 
   .footer__contacts-block {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     width: 460px;
     align-items: center;
     padding-top: 25px;
-
-    p:first-child {
-      margin-right: 54px;
-    }
-  }
-
-  .footer__wrapper {
-    margin-top: 96px;
+    background-color: #ffffff;
   }
 
   .footer__map {
-    width: 1440px;
-    top: -100px;
-    left: 640px;
-    z-index: -1;
     background: no-repeat center url("../img/bg-map-desktop@1x.png") $background-color;
   }
 }
