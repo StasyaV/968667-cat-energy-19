@@ -7,16 +7,30 @@
   margin-bottom: 30px;
 }
 
+.products__container {
+  padding: 0;
+}
+
 @media (min-width: $tablet-width) {
   .products__list {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
   }
+
+  .products__container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .products__list {
     margin-bottom: 89px;
+  }
+
+  .products__container {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }

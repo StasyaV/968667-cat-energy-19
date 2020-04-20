@@ -8,10 +8,6 @@
   margin-bottom: 42px;
 }
 
-.process__container {
-  padding: 0 20px;
-}
-
 .process__list {
   @include list-reset();
   display: flex;
@@ -66,10 +62,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .process__container {
-    padding: 0 30px;
-  }
-
   .process {
     margin: 0 auto;
     border-bottom: 1px solid $border-color;

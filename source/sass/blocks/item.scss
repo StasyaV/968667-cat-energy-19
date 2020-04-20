@@ -8,6 +8,10 @@
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
 
+  &:not(:last-child) {
+    border-bottom: none;
+  }
+
   &--show-more {
     position: relative;
     text-align: center;

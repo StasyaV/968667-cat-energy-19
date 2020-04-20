@@ -28,12 +28,30 @@
 
   fieldset {
     border: none;
-    padding: 21px 20px;
+    padding: 21px 0;
   }
 
   .form__goal {
-    border-top: 1px solid $border-color;
-    border-bottom: 1px solid $border-color;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -20px;
+      width: 100vw;
+      height: 1px;
+      background-color: $border-color;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
   }
 
   p {
@@ -204,6 +222,11 @@ input[type="checkbox"]:checked + label::after {
     .form__goal {
       padding: 25px 28px;
       border: 1px solid $border-color;
+
+      &::before,
+      &::after {
+        display: none;
+      }
     }
 
     p {

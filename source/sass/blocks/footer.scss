@@ -21,6 +21,7 @@
 
 .footer__container {
   position: relative;
+  padding: 0;
 }
 
 .footer__contacts {
@@ -36,9 +37,7 @@
   justify-content: space-between;
   text-align: left;
   padding-top: 31px;
-  padding-right: 20px;
   padding-bottom: 26px;
-  padding-left: 20px;
 
   p {
     margin: 0;
@@ -76,7 +75,6 @@
   }
 
   .footer__contacts-block {
-    width: 768px;
     margin: 0 auto;
   }
 
@@ -116,6 +114,8 @@
     width: 460px;
     align-items: center;
     padding-top: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
     background-color: #ffffff;
   }
 
