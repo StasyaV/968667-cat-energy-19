@@ -15,3 +15,12 @@
   list-style: none;
   padding: 0;
 }
+
+@mixin placeholder {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $font-oswald;
+  font-weight: 500;
+  color: $font-grey;
+  text-transform: uppercase;
+}

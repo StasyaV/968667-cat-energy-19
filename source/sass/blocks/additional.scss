@@ -1,3 +1,22 @@
 .additional {
   @include list-reset();
+  margin: 0;
+  margin-bottom: 39px;
+}
+
+.additional-block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 39px;
+}
+
+@media (min-width: $desktop-width) {
+  .additional-block {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .additional {
+    flex-grow: 1;
+  }
 }

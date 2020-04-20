@@ -1,7 +1,11 @@
 .add-item {
-  padding: 10px 20px;
-  border-top: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
+  padding: 10px 0;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+
+  &:not(:last-child) {
+    border-bottom: none;
+  }
 }
 
 .add-item__name {
@@ -10,25 +14,25 @@
   font-size: 16px;
   text-transform: uppercase;
   text-align: left;
+  margin: 0;
+  margin-bottom: 14px;
 }
 
 .add-item__feature {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
   font-family: $font-arial;
   color: $font-grey;
   font-size: 14px;
+
+  p {
+    margin: 0;
+  }
 }
 
-.add-item__buy-all {
-  width: 280px;
-  height: 289px;
-  padding: 43px;
-  padding-top: 190px;
-  margin: 20px;
-  color: #ffffff;
-  font-size: 16px;
-  background-image: url("../img/gift-photo-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  border: none;
+.add-item__button {
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -36,6 +40,18 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    border: 1px solid $border-color;
+    padding: 28px 37px;
+
+    &:not(:last-child) {
+      border-bottom: none;
+    }
+  }
+
+  .add-item__info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .add-item__button {
@@ -45,22 +61,51 @@
   .add-item__feature {
     display: flex;
     justify-content: space-between;
-  }
 
-  .add-item__buy-all {
-    width: 708px;
-    height: 200px;
-    padding: 40px;
-    margin: 0;
-    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    p:first-child {
+      margin-right: 52px;
+    }
   }
 }
 
+
 @media (min-width: $desktop-width) {
-  .add-item__buy-all {
-    width: 245px;
-    height: 289px;
-    padding-top: 190px;
-    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  .add-item {
+    border-right: none;
+    border-left: none;
+    padding: 16px 0;
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+
+
+  .add-item__button {
+    width: 100%;
+  }
+
+  .add-item__feature {
+    margin-right: 39px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+
+  .add-item__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    width: auto;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .add-item__name {
+    font-size: 20px;
+    line-height: 20px;
   }
 }

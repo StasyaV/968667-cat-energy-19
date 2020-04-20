@@ -3,13 +3,14 @@
   font-family: $font-oswald;
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 240px;
   background: no-repeat center url("../img/index-background-mobile@1x.jpg") #63a736;
 }
 
 .promo__block {
   display: flex;
   flex-direction: column;
-  padding: 29px 0;
+  padding: 30px 20px;
   margin-bottom: 200px;
   height: 305px;
 }
@@ -17,10 +18,15 @@
 .promo__title {
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
+  margin-bottom: 19px;
 }
 
 .promo__description {
+  margin: 0;
   font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 29px;
 }
 
 .promo__button {
@@ -37,8 +43,7 @@
   }
 
   .promo__block {
-    margin-left: 120px;
-    padding: 0;
+    padding-left: 120px;
     background-image: none;
     background-color: transparent;
     text-align: left;

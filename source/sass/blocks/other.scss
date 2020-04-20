@@ -1,51 +1,106 @@
+.other {
+  overflow-x: hidden;
+}
+
 .other__title {
-  padding-left: 20px;
+  margin-bottom: 30px;
   font-family: $font-oswald;
   font-size: 24px;
   line-height: 24px;
   color: $font-black;
   font-weight: normal;
-  margin-bottom: 30px;
 }
 
-.other__container {
-  padding: 0;
+.other__action {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 289px;
+  padding: 43px 60px;
+  margin: 0 auto;
+  background: no-repeat center url("../img/gift-photo-mobile@1x.jpg") #70b447;
+}
+
+.other__action-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 180px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  background: none;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 61px;
+    margin-bottom: 55px;
+    background-image: url("../img/gift.png");
+    background-repeat: no-repeat;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .other__title {
     margin-bottom: 75px;
-
-    &::before,
-    &::after {
-      content: "";
-      display: inline-block;
-      line-height: 36px;
-      vertical-align: middle;
-      width: 20px;
-      height: 3px;
-      background-color: $base-color;
-    }
-
-    &::after {
-      width: 350px;
-    }
+    padding-left: 0;
+    font-size: 36px;
   }
 
-  .other__container {
-    display: flex;
-    flex-direction: column;
+  .other__action {
+    flex-direction: row;
+    width: 708px;
+    height: 200px;
+    padding: 43px 0;
+    background: no-repeat center url("../img/gift-photo-tablet@1x.jpg") #70b447;
+  }
+
+  .other__action-button {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    text-align: left;
+    position: relative;
+    margin-left: 387px;
+    margin-right: 125px;
+
+    &::before {
+      position: absolute;
+      right: 430px;
+    }
   }
 }
 
+
 @media (min-width: $desktop-width) {
-  .other__container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  .other {
+    margin-bottom: 86px;
   }
 
-  .other__title {
-    font-size: 36px;
+  .other__action {
+    flex-direction: row;
+    width: 245px;
+    height: 289px;
+    padding: 0 30px;
+    margin: 0;
+    margin-left: 80px;
+    background: no-repeat center url("../img/gift-photo-desktop@1x.jpg") #70b447;
+  }
+
+  .other__action-button {
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: 43px;
+
+    text-align: center;
+
+    &::before {
+      right: 56px;
+      bottom: 70px;
+    }
   }
 }

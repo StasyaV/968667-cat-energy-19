@@ -8,13 +8,18 @@
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
 
-  &--button {
+  &:not(:last-child) {
+    border-bottom: none;
+  }
+
+  &--show-more {
     position: relative;
     text-align: center;
 
     p {
       display: block;
       text-align: center;
+      margin: 0;
     }
 
     .item__image {
@@ -22,16 +27,26 @@
       width: 31px;
       height: 31px;
       margin: 0 auto;
+      margin-bottom: 25px;
       background-image: url("../img/icon-plus-mobile.svg");
       background-repeat: no-repeat;
       background-position: center;
       opacity: 0.2;
     }
+
+    .item-features__name {
+      margin-bottom: 11px;
+    }
+
+    .item-features__data {
+      margin-bottom: 22px;
+    }
   }
 }
 
-
 .item-features__name {
+  margin: 0;
+  margin-bottom: 18px;
   font-family: $font-oswald;
   color: $font-black;
   font-size: 16px;
@@ -46,6 +61,10 @@
   justify-content: space-around;
 }
 
+.item__table {
+  flex-grow: 1;
+}
+
 .item-features__data {
   display: flex;
   justify-content: space-between;
@@ -56,7 +75,7 @@
 }
 
 .item__button {
-  width: 94%;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -70,7 +89,15 @@
     text-align: center;
     background-color: $background-color;
 
-    &--button {
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
+
+    &--show-more {
       background-color: transparent;
       border: 1px solid $border-color;
 
@@ -131,7 +158,19 @@
   .item {
     width: 245px;
 
-    &--button {
+    &:nth-child(2n) {
+      margin-right: 40px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n+4) {
+      margin-bottom: 0;
+    }
+
+    &--show-more {
       p {
         padding: 0;
       }
@@ -149,7 +188,7 @@
   .item__button {
     min-width: 169px;
 
-    &--show-more {
+    &--plus {
       min-width: 169px;
     }
   }
