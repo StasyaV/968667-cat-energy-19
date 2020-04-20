@@ -45,8 +45,8 @@
     margin-top: 60px;
   }
 
-  .header__index {
-    &--background::after {
+  .header-index {
+    &::after {
       position: absolute;
       top: 0;
       left: 50%;

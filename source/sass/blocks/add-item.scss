@@ -31,39 +31,6 @@
   }
 }
 
-.add-item__action {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 289px;
-  padding: 43px 60px;
-  margin: 0 auto;
-  background: no-repeat center url("../img/gift-photo-mobile@1x.jpg") #70b447;
-}
-
-.add-item__buy-all {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 180px;
-  margin: 0 auto;
-  color: #ffffff;
-  font-size: 16px;
-  border: none;
-  background: none;
-
-  &::before {
-    content: "";
-    display: block;
-    width: 56px;
-    height: 61px;
-    margin-bottom: 55px;
-    background-image: url("../img/gift.png");
-    background-repeat: no-repeat;
-  }
-}
-
 .add-item__button {
   width: 100%;
 }
@@ -99,30 +66,8 @@
       margin-right: 52px;
     }
   }
-
-  .add-item__action {
-    flex-direction: row;
-    width: 708px;
-    height: 200px;
-    padding: 43px 0;
-    background: no-repeat center url("../img/gift-photo-tablet@1x.jpg") #70b447;
-  }
-
-  .add-item__buy-all {
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
-    text-align: left;
-    position: relative;
-    margin-left: 387px;
-    margin-right: 125px;
-
-    &::before {
-      position: absolute;
-      right: 430px;
-    }
-  }
 }
+
 
 @media (min-width: $desktop-width) {
   .add-item {
@@ -135,28 +80,6 @@
     }
   }
 
-  .add-item__action {
-    flex-direction: row;
-    width: 245px;
-    height: 289px;
-    padding: 0 30px;
-    margin: 0;
-    margin-left: 80px;
-    background: no-repeat center url("../img/gift-photo-desktop@1x.jpg") #70b447;
-  }
-
-  .add-item__buy-all {
-    margin: 0;
-    margin-top: auto;
-    margin-bottom: 43px;
-
-    text-align: center;
-
-    &::before {
-      right: 56px;
-      bottom: 70px;
-    }
-  }
 
   .add-item__button {
     width: 100%;
