@@ -114,7 +114,8 @@
     text-align: center;
 
     &::before {
-      right: 56px;
+      right: 50%;
+      transform: translateX(50%);
       bottom: 70px;
     }
   }

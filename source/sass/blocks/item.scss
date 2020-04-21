@@ -131,6 +131,10 @@
   .item__image {
     margin-top: -80px;
     margin-bottom: 40px;
+
+    img {
+      margin-bottom: auto;
+    }
   }
 
   .item-features__name {
