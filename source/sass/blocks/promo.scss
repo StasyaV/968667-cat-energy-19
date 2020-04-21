@@ -5,7 +5,13 @@
   margin: 0 auto;
   margin-bottom: 240px;
   background: no-repeat center url("../img/index-background-mobile@1x.jpg") #63a736;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px 305px;
+  }
 }
+
 
 .promo__block {
   display: flex;
