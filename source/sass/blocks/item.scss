@@ -131,10 +131,12 @@
   .item__image {
     margin-top: -80px;
     margin-bottom: 40px;
+    min-height: 200px;
+    display: flex;
+  }
 
-    img {
-      margin-bottom: auto;
-    }
+  .item__image-wrapper {
+    margin-top: auto;
   }
 
   .item-features__name {
