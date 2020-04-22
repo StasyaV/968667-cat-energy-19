@@ -115,7 +115,7 @@ input[type="checkbox"]:checked + label::after {
   content: "";
   width: 22px;
   height: 17px;
-  background-image: url("../img/tick.png");
+  background-image: url("../img/icon-tick.svg");
 }
 
 .tell-more__item label {
@@ -198,7 +198,7 @@ input[type="checkbox"]:checked + label::after {
     display: block;
     width: 18px;
     height: 18px;
-    background-image: url("../img/mail.png");
+    background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
   }
 

@@ -14,7 +14,11 @@
       <div class="head-wrapper">
         <div class="header__logo logo">
           <a href="index.html">
-            <img src="img/logo-mobile.svg" class="logo__image" width="191" height="39" alt="Логотип компании">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" class="logo__image" width="191" height="39" alt="Логотип компании">
+            </picture>
           </a>
         </div>
         <button type="button" class="menu-button menu-button--closed menu-button--none"></button>
