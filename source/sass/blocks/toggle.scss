@@ -33,6 +33,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .toggle {
+    position: absolute;
+    bottom: 30px;
+    z-index: 5;
+  }
+
   .toggle__line {
     width: 428px;
     height: 6px;
@@ -41,7 +47,7 @@
     position: relative;
 
     &::before {
-      left: 203px;
+      left: 211px;
       top: -2px;
       z-index: 1;
       width: 8px;
@@ -61,27 +67,16 @@
     padding-left: 20px;
     margin: 0;
     position: relative;
-
-    // &::after {
-    //   position: absolute;
-    //   background-color: $cats-background;
-    //   content: "";
-    //   display: block;
-    //   width: 768px;
-    //   height: 462px;
-    //   top: -255px;
-    //   left: -221px;
-    //   z-index: -1;
-    // }
   }
 
   .toggle__point {
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     width: 34px;
     height: 34px;
     background-color: #ffffff;
     border-radius: 50%;
-    left: 248px;
   }
 }
 

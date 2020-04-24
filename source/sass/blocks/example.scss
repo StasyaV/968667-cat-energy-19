@@ -101,21 +101,16 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    background-color: #ffffff;
-
-    &::after {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 462px;
-      margin-top: -290px;
-      background-color: $background-color;
-    }
+    background: linear-gradient(#ffffff 58%, $background-color 58%);
   }
 
   .example__block {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .example__wrap {
+    padding: 0 30px;
   }
 
   .example__title {
@@ -125,6 +120,7 @@
 
   .example__description {
     font-size: 16px;
+    line-height: 24px;
     margin-bottom: 56px;
   }
 
@@ -141,15 +137,31 @@
     width: 50%;
   }
 
+  .stat__data {
+    width: 162px;
+
+    &::before {
+      width: 162px;
+      height: 72px;
+    }
+  }
+
   .stat__total {
     width: 25%;
     margin: 0;
     margin-left: auto;
+    padding: 20px 0;
   }
 
   .stat__total-description {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .data__type {
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 37px;
   }
 
   .example__slider {
@@ -165,18 +177,14 @@
   .example {
     flex-direction: row;
     padding: 0;
-    background-color: $background-color;
-
-    &::after {
-      display: none;
-    }
+    background: linear-gradient(#ffffff 20%, $background-color 20%);
   }
 
 
   .example__block {
     display: flex;
     justify-content: space-between;
-    height: 462px;
+    padding-bottom: 60px;
   }
 
   .example__slider {
@@ -190,7 +198,6 @@
   }
 
   .example__title {
-    margin-top: -100px;
     margin-bottom: 142px;
   }
 
