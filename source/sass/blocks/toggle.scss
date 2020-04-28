@@ -10,13 +10,14 @@
 }
 
 .toggle__line {
+  position: relative;
   display: block;
   width: 84px;
   height: 14px;
+  margin: 0 auto;
   background-color: #ffffff;
   border-radius: 6px;
   border: 1px solid $border-color;
-  position: relative;
 
   &::before {
     position: absolute;
@@ -81,7 +82,19 @@
 }
 
 @media (min-width: $desktop-width) {
+  .toggle {
+    bottom: 50px;
+  }
+
   .toggle__after::after {
     top: -73px;
+  }
+
+  .toggle__point {
+    left: 54.5%;
+  }
+
+  .toggle__line::before {
+    left: 235px;
   }
 }

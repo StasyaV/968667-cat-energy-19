@@ -13,6 +13,10 @@
   margin-bottom: 35px;
 }
 
+.slider__slide {
+  margin: 0 auto;
+}
+
 .slider__slide--slide-2 {
   display: none;
 }
@@ -34,6 +38,7 @@
     overflow: hidden;
 
     &--slide-1 {
+      padding-left: 10px;
       background: linear-gradient(#ffffff 30%, $background-color 30%);
     }
 
@@ -51,5 +56,29 @@
   .slider__slide-image--after {
     position: absolute;
     right: 56%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    width: 70%;
+    margin-top: -88px;
+    background-color: transparent;
+  }
+
+  .slider__slide {
+    height: 700px;
+
+    &--slide-1 {
+      padding-left: 0;
+    }
+
+    &--slide-2 {
+      left: 53%;
+    }
+  }
+
+  .slider__slide-image--after {
+    right: 60%;
   }
 }
