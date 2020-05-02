@@ -17,6 +17,8 @@
   margin: 0 auto;
 
   &--slide-1 {
+    display: flex;
+    justify-content: center;
     position: absolute;
     top: 0;
     z-index: 2;
@@ -39,18 +41,18 @@
 
   .slider__slide {
     height: 570px;
-    overflow: hidden;
+    padding-left: 20px;
 
     &--slide-1 {
+      justify-content: end;
       width: 50%; // Управляя шириной показываем часть слайдера
-      padding-left: 20px;
       background: linear-gradient(to bottom, #ffffff 30%, $background-color 30%);
+      overflow: hidden;
     }
 
     &--slide-2 {
       position: relative;
       width: 100%;
-      margin-left: 20px;
       background: linear-gradient(to bottom, #ffffff 30%, $cats-background 30%);
 
       &::after {
@@ -74,19 +76,24 @@
 @media (min-width: $desktop-width) {
   .slider {
     width: 70%;
-    margin-top: -88px;
+    margin-top: -30px;
     background-color: transparent;
   }
 
   .slider__slide {
     height: 700px;
+    padding-left: 50px;
 
     &--slide-1 {
-      padding-left: 50px;
+      background: linear-gradient(to bottom, #ffffff 25%, $background-color 25%);
     }
 
     &--slide-2 {
-      margin-left: 50px;
+      background: linear-gradient(to bottom, #ffffff 25%, $cats-background 25%);
+
+      &::after {
+        height: 525px;
+      }
     }
   }
 }

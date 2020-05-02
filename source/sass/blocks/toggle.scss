@@ -33,6 +33,14 @@
   }
 }
 
+.toggle__before {
+  margin-left: auto;
+}
+
+.toggle__after {
+  margin-right: auto;
+}
+
 @media (min-width: $tablet-width) {
   .toggle {
     position: absolute;
@@ -83,7 +91,7 @@
 
 @media (min-width: $desktop-width) {
   .toggle {
-    bottom: 50px;
+    bottom: 105px;
   }
 
   .toggle__after::after {
