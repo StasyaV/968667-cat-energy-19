@@ -46,11 +46,14 @@
     position: absolute;
     bottom: 30px;
     z-index: 5;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .toggle__line {
     width: 428px;
     height: 6px;
+    margin: 0 21px;
     border-radius: 2.5px;
     background-color: #dcdcdc;
     position: relative;
@@ -66,16 +69,18 @@
   }
 
   .toggle__before {
-    padding-right: 20px;
+    padding-bottom: 6px;
     position: relative;
     z-index: 1;
     margin: 0;
+    border-bottom: 1px solid $border-color;
   }
 
   .toggle__after {
-    padding-left: 20px;
+    padding-bottom: 6px;
     margin: 0;
     position: relative;
+    border-bottom: 1px solid $border-color;
   }
 
   .toggle__point {

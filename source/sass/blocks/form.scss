@@ -174,7 +174,7 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .comments__field {
-  min-width: 280px;
+  width: 100%;
   margin-left: 10px;
   border: 1px solid $border-color;
 
@@ -185,8 +185,8 @@ input[type="checkbox"]:checked + label::after {
   }
 }
 
-.form__submit {
-  margin: 0 auto;
+.form__button {
+  width: 100%;
 }
 
 .form__contacts-data {
@@ -274,12 +274,18 @@ input[type="checkbox"]:checked + label::after {
   .form__submit {
     display: flex;
     justify-content: flex-start;
-    margin-left: 70px;
   }
 
   .form__button {
+    width: 283px;
     margin-left: 0;
     margin-right: 61px;
+  }
+
+  .form__notice {
+    display: inline-block;
+    line-height: 40px;
+    vertical-align: middle;
   }
 
   .form__contacts-title {
@@ -295,6 +301,10 @@ input[type="checkbox"]:checked + label::after {
   .form__contacts,
   .form__comments {
     margin-bottom: 69px;
+  }
+
+  .form__tell-more {
+    margin-bottom: 54px;
   }
 }
 
@@ -384,7 +394,7 @@ input[type="checkbox"]:checked + label::after {
     margin-bottom: 61px;
   }
 
-  .form__submit {
-    margin: 0;
+  .form__button {
+    width: 520px;
   }
 }

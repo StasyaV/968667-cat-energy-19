@@ -39,6 +39,7 @@
   display: inline-block;
   margin: 0;
   font-size: 12px;
+  text-transform: lowercase;
   background-color: $background-color;
 }
 
@@ -50,6 +51,8 @@
 }
 
 .stat__total {
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   margin-bottom: 24px;
 }
@@ -73,10 +76,16 @@
     &::before {
       height: 72px;
     }
+
+    &--days {
+      &::before {
+        left: 10px;
+      }
+    }
   }
 
   .stat__total {
-    width: 25%;
+    flex-direction: column;
     margin: 0;
     margin-left: auto;
     padding: 20px 0;
@@ -91,10 +100,20 @@
     margin-bottom: 15px;
     font-size: 30px;
     line-height: 37px;
+
+    &--days {
+      padding-left: 20px;
+    }
   }
 
   .stat__data-description {
+    font-size: 14px;
+    line-height: 14px;
     background-color: #ffffff;
+
+    &--time {
+      width: 120%;
+    }
   }
 }
 
@@ -102,14 +121,34 @@
   .stat__table {
     width: 100%;
     justify-content: flex-start;
+    margin-bottom: 45px;
   }
 
   .stat__total {
-    width: 100%;
+    flex-direction: row;
+    width: 85%;
     margin: 0;
   }
 
   .stat__data-description {
     background-color: $background-color;
+
+    &--time {
+      width: 100%;
+    }
+  }
+
+  .stat__data {
+    &--days {
+      &::before {
+        left: 3px;
+      }
+    }
+  }
+
+  .stat__data-type {
+    &--days {
+      padding-left: 0;
+    }
   }
 }

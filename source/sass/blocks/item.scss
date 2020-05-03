@@ -45,6 +45,7 @@
 }
 
 .item-features__name {
+  display: block;
   margin: 0;
   margin-bottom: 18px;
   font-family: $font-oswald;
@@ -53,6 +54,7 @@
   line-height: 20px;
   text-align: left;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .item__info {
@@ -76,6 +78,11 @@
 
 .item__button {
   width: 100%;
+}
+
+.item__image {
+  display: block;
+  text-decoration: none;
 }
 
 @media (min-width: $tablet-width) {
