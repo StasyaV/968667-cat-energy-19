@@ -60,7 +60,7 @@ input[type="checkbox"].visually-hidden {
 
 @media (min-width: $desktop-width) {
   .container {
-    min-width: 1300px;
+    max-width: 1300px;
     padding: 0 40px;
   }
 }
