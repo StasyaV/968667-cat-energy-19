@@ -10,13 +10,14 @@
 }
 
 .toggle__line {
+  position: relative;
   display: block;
   width: 84px;
   height: 14px;
+  margin: 0 auto;
   background-color: #ffffff;
   border-radius: 6px;
   border: 1px solid $border-color;
-  position: relative;
 
   &::before {
     position: absolute;
@@ -32,16 +33,33 @@
   }
 }
 
+.toggle__before {
+  margin-left: auto;
+}
+
+.toggle__after {
+  margin-right: auto;
+}
+
 @media (min-width: $tablet-width) {
+  .toggle {
+    position: absolute;
+    bottom: 30px;
+    z-index: 5;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   .toggle__line {
     width: 428px;
     height: 6px;
+    margin: 0 21px;
     border-radius: 2.5px;
     background-color: #dcdcdc;
     position: relative;
 
     &::before {
-      left: 203px;
+      left: 211px;
       top: -2px;
       z-index: 1;
       width: 8px;
@@ -51,41 +69,36 @@
   }
 
   .toggle__before {
-    padding-right: 20px;
+    padding-bottom: 6px;
     position: relative;
     z-index: 1;
     margin: 0;
+    border-bottom: 1px solid $border-color;
   }
 
   .toggle__after {
-    padding-left: 20px;
+    padding-bottom: 6px;
     margin: 0;
     position: relative;
-
-    // &::after {
-    //   position: absolute;
-    //   background-color: $cats-background;
-    //   content: "";
-    //   display: block;
-    //   width: 768px;
-    //   height: 462px;
-    //   top: -255px;
-    //   left: -221px;
-    //   z-index: -1;
-    // }
+    border-bottom: 1px solid $border-color;
   }
 
   .toggle__point {
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     width: 34px;
     height: 34px;
     background-color: #ffffff;
     border-radius: 50%;
-    left: 248px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .toggle {
+    bottom: 105px;
+  }
+
   .toggle__after::after {
     top: -73px;
   }

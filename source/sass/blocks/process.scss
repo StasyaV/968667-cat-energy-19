@@ -68,6 +68,11 @@
     margin-bottom: 51px;
   }
 
+  .process__title {
+    margin-bottom: 63px;
+    font-size: 60px;
+  }
+
   .process__list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -128,7 +133,7 @@
   .process__item {
     width: 200px;
     padding: 0;
-    margin-right: 124px;
+    margin-right: 121px;
 
     &:last-child {
       margin-right: 0;
@@ -136,7 +141,7 @@
   }
 
   .process {
-    margin-bottom: 217px;
+    margin-bottom: 120px;
     border-bottom: none;
   }
 
