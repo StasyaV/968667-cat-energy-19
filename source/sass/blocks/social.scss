@@ -10,7 +10,6 @@
 
 .social__link {
   display: inline-block;
-  object-fit: contain;
 
   &--vk {
     width: 22px;
@@ -26,10 +25,10 @@
     width: 10px;
     height: 19px;
   }
+}
 
-  path {
-    fill: $icon-color;
-  }
+.social__link-icon {
+  fill: $icon-color;
 }
 
 @media (min-width: $tablet-width) {
