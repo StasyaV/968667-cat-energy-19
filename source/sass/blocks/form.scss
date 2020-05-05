@@ -115,7 +115,7 @@ input[type="checkbox"]:checked + label::after {
   content: "";
   width: 22px;
   height: 17px;
-  background-image: url("../img/icon-tick.svg");
+  background-image: url("../img/svg/icon-tick.svg");
 }
 
 .tell-more__item label {
