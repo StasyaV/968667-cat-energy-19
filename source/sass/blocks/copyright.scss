@@ -23,15 +23,6 @@
 .copyright__logo-icon {
   fill: $icon-color;
   margin-left: auto;
-
-  &:hover {
-    fill: $base-color;
-  }
-
-  &:active {
-    fill: $base-color;
-    opacity: 0.3;
-  }
 }
 
 .copyright__link {
@@ -46,6 +37,10 @@
 
   &:hover {
     color: $font-grey;
+
+    .copyright__logo-icon {
+      fill: $base-color;
+    }
   }
 
   &:active {
