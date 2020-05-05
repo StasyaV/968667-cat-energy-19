@@ -2,6 +2,7 @@
   @include list-reset();
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 24px 0;
   margin: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -10,7 +11,6 @@
 
 .social__link {
   display: inline-block;
-  object-fit: contain;
 
   &--vk {
     width: 22px;
@@ -26,9 +26,18 @@
     width: 10px;
     height: 19px;
   }
+}
 
-  path {
-    fill: $icon-color;
+.social__link-icon {
+  fill: $icon-color;
+
+  &:hover {
+    fill: $base-color;
+  }
+
+  &:active {
+    fill: $base-color;
+    opacity: 0.3;
   }
 }
 

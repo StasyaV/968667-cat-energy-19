@@ -18,9 +18,33 @@
   width: 27px;
   height: 34px;
   object-fit: contain;
+}
 
-  path {
-    fill: $icon-color;
+.copyright__logo-icon {
+  fill: $icon-color;
+  margin-left: auto;
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+
+  &:hover {
+    color: $font-grey;
+
+    .copyright__logo-icon {
+      fill: $base-color;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -29,6 +53,7 @@
     padding: 0;
 
     p {
+      display: inline-block;
       margin-right: 23px;
     }
   }
