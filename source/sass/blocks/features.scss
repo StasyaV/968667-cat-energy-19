@@ -77,21 +77,34 @@
 }
 
 .features__button {
+  display: flex;
+  align-items: center;
   font-family: $font-oswald;
   color: $font-black;
   font-size: 16px;
   text-transform: uppercase;
+  text-decoration: none;
 
   &::after {
     content: "";
-    display: inline-block;
+    display: block;
     width: 40px;
     height: 12px;
-    line-height: 16px;
-    vertical-align: middle;
+    margin-left: 24px;
     background-image: url("../img/svg/icon-right-arrow-long.svg");
-    background-position: 10px center;
     background-repeat: no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      width: 34px;
+      background-image: url("../img/svg/icon-right-arrow-verylong.svg");
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -111,10 +124,6 @@
 
   .features__button {
     font-size: 20px;
-
-    &::after {
-      background-position: 10px -1px;
-    }
   }
 
   .features__block {

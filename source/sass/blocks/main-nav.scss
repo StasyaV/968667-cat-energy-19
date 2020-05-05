@@ -50,6 +50,17 @@
   &:active {
     color: rgba(17, 17, 17, 0.3);
   }
+
+  &--desktop-index {
+    &:hover,
+    &:focus {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 }
 
 .menu-button {

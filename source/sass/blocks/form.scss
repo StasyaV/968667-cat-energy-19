@@ -76,6 +76,16 @@ input[type="radio"] + label::before {
   border-radius: 50%;
   background-color: #ffffff;
   border: 1px solid $border-color;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: $border-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 input[type="radio"]:checked + label::after {
@@ -88,6 +98,16 @@ input[type="radio"]:checked + label::after {
   height: 18px;
   border-radius: 50%;
   background-color: $base-color;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: $border-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .form__goal label {
@@ -106,6 +126,16 @@ input[type="checkbox"] + label::before {
   vertical-align: middle;
   background-color: #ffffff;
   border: 1px solid $border-color;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: $border-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 input[type="checkbox"]:checked + label::after {
@@ -116,6 +146,16 @@ input[type="checkbox"]:checked + label::after {
   width: 22px;
   height: 17px;
   background-image: url("../img/svg/icon-tick.svg");
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: $border-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .tell-more__item label {
@@ -159,10 +199,19 @@ input[type="checkbox"]:checked + label::after {
     width: 172px;
     padding: 18px 16px;
     margin-left: 9px;
-    border: 1px solid $border-color;
+    border: 1px solid $hover-grey;
 
     &::placeholder {
       @include placeholder;
+    }
+
+    &:hover {
+      border-color: $border-color;
+    }
+
+    &:active,
+    &:focus {
+      border: 2px solid $font-grey;
     }
   }
 
@@ -171,6 +220,20 @@ input[type="checkbox"]:checked + label::after {
     line-height: 54px;
     vertical-align: middle;
   }
+}
+
+.error {
+  input {
+    border: 2px solid $error-color;
+  }
+
+  .form__contacts-data-icon {
+    fill: $error-color;
+  }
+}
+
+input:focus + .form__contacts-data-icon {
+  fill: $base-color;
 }
 
 .comments__field {
