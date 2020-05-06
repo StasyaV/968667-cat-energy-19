@@ -237,7 +237,7 @@ input:focus + .form__contacts-data-icon {
 .comments__field {
   max-width: 100%;
   margin-left: 10px;
-  border: 1px solid $border-color;
+  border: 1px solid $hover-grey;
 
   &::placeholder {
     @include placeholder;
