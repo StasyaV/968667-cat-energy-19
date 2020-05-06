@@ -50,6 +50,17 @@
   &:active {
     color: rgba(17, 17, 17, 0.3);
   }
+
+  &--desktop-index {
+    &:hover,
+    &:focus {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 }
 
 .menu-button {
@@ -63,13 +74,13 @@
   background-color: transparent;
 
   &--closed {
-    background-image: url("../img/icon-mobile-menu.svg");
+    background-image: url("../img/svg/icon-mobile-menu.svg");
   }
 
   &--open {
     width: 19px;
     height: 46px;
-    background-image: url("../img/icon-close.svg");
+    background-image: url("../img/svg/icon-close.svg");
   }
 
   &--none {

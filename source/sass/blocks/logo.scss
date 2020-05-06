@@ -3,3 +3,16 @@
   line-height: 41px;
   vertical-align: middle;
 }
+
+.logo {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

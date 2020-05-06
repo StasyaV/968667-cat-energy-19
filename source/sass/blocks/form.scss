@@ -76,6 +76,16 @@ input[type="radio"] + label::before {
   border-radius: 50%;
   background-color: #ffffff;
   border: 1px solid $border-color;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: $border-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 input[type="radio"]:checked + label::after {
@@ -88,6 +98,7 @@ input[type="radio"]:checked + label::after {
   height: 18px;
   border-radius: 50%;
   background-color: $base-color;
+  cursor: pointer;
 }
 
 .form__goal label {
@@ -106,6 +117,21 @@ input[type="checkbox"] + label::before {
   vertical-align: middle;
   background-color: #ffffff;
   border: 1px solid $border-color;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  opacity: 0.8;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 input[type="checkbox"]:checked + label::after {
@@ -115,7 +141,19 @@ input[type="checkbox"]:checked + label::after {
   content: "";
   width: 22px;
   height: 17px;
-  background-image: url("../img/icon-tick.svg");
+  background-image: url("../img/svg/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: $border-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .tell-more__item label {
@@ -159,10 +197,19 @@ input[type="checkbox"]:checked + label::after {
     width: 172px;
     padding: 18px 16px;
     margin-left: 9px;
-    border: 1px solid $border-color;
+    border: 1px solid $hover-grey;
 
     &::placeholder {
       @include placeholder;
+    }
+
+    &:hover {
+      border: 1px solid $border-color;
+    }
+
+    &:active,
+    &:focus {
+      box-shadow: 0 0 0 2px $font-grey;
     }
   }
 
@@ -173,15 +220,38 @@ input[type="checkbox"]:checked + label::after {
   }
 }
 
+.error {
+  input {
+    box-shadow: 0 0 0 2px $error-color;
+  }
+
+  .form__contacts-data-icon {
+    fill: $error-color;
+  }
+}
+
+input:focus + .form__contacts-data-icon {
+  fill: $base-color;
+}
+
 .comments__field {
-  width: 100%;
+  max-width: 100%;
   margin-left: 10px;
-  border: 1px solid $border-color;
+  border: 1px solid $hover-grey;
 
   &::placeholder {
     @include placeholder;
     border: none;
     text-align: left;
+  }
+
+  &:hover {
+    border: 1px solid $border-color;
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 2px $font-grey;
   }
 }
 

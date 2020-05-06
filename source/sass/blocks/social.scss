@@ -31,7 +31,8 @@
 .social__link-icon {
   fill: $icon-color;
 
-  &:hover {
+  &:hover,
+  &:focus {
     fill: $base-color;
   }
 
