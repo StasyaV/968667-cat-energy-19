@@ -99,15 +99,6 @@ input[type="radio"]:checked + label::after {
   border-radius: 50%;
   background-color: $base-color;
   cursor: pointer;
-
-  &:hover,
-  &:focus {
-    border-color: $border-hover;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .form__goal label {
@@ -127,10 +118,15 @@ input[type="checkbox"] + label::before {
   background-color: #ffffff;
   border: 1px solid $border-color;
   cursor: pointer;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  opacity: 0.8;
 
   &:hover,
   &:focus {
-    border-color: $border-hover;
+    opacity: 1;
   }
 
   &:active {
@@ -146,6 +142,8 @@ input[type="checkbox"]:checked + label::after {
   width: 22px;
   height: 17px;
   background-image: url("../img/svg/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   cursor: pointer;
 
   &:hover,
@@ -206,12 +204,12 @@ input[type="checkbox"]:checked + label::after {
     }
 
     &:hover {
-      border-color: $border-color;
+      border: 1px solid $border-color;
     }
 
     &:active,
     &:focus {
-      border: 2px solid $font-grey;
+      box-shadow: 0 0 0 2px $font-grey;
     }
   }
 
@@ -224,7 +222,7 @@ input[type="checkbox"]:checked + label::after {
 
 .error {
   input {
-    border: 2px solid $error-color;
+    box-shadow: 0 0 0 2px $error-color;
   }
 
   .form__contacts-data-icon {
@@ -237,7 +235,7 @@ input:focus + .form__contacts-data-icon {
 }
 
 .comments__field {
-  width: 100%;
+  max-width: 100%;
   margin-left: 10px;
   border: 1px solid $border-color;
 
@@ -245,6 +243,15 @@ input:focus + .form__contacts-data-icon {
     @include placeholder;
     border: none;
     text-align: left;
+  }
+
+  &:hover {
+    border: 1px solid $border-color;
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 2px $font-grey;
   }
 }
 

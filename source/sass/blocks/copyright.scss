@@ -35,7 +35,8 @@
   font-size: inherit;
   color: inherit;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $font-grey;
 
     .copyright__logo-icon {
