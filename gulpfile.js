@@ -50,8 +50,8 @@ gulp.task("start", gulp.series("build", "server"));
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
-      imagemin.optipng({ optimizationLevel: 3 }),
-      imagemin.jpegtran({ progressive: true }),
+      imagemin.mozjpeg({ quality: 75, progressive: true }),
+      imagemin.optipng({ optimizationLevel: 5 }),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("source/img"));
