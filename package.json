@@ -9,7 +9,9 @@
     "browser-sync": "2.26.x",
     "gulp": "4.0.x",
     "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
+    "gulp-jsmin": "^0.1.5",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
     "gulp-sass": "^4.0.2",
@@ -23,8 +25,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" —syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp css",
-    "start": "gulp start"
+    "build": "gulp build && gulp server"
   },
   "browserslist": [
     "last 2 versions",
