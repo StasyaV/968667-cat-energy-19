@@ -236,7 +236,9 @@ input:focus + .form__contacts-data-icon {
 
 .comments__field {
   max-width: 100%;
+  resize: vertical;
   margin-left: 10px;
+  padding: 16px 15px;
   border: 1px solid $hover-grey;
 
   &::placeholder {
@@ -332,8 +334,9 @@ input:focus + .form__contacts-data-icon {
   }
 
   .comments__field {
-    width: 630px;
+    width: 100%;
     margin-left: 0;
+    padding: 20px 17px;
     border: 1px solid $border-color;
   }
 

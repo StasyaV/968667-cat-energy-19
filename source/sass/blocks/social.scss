@@ -26,20 +26,22 @@
     width: 10px;
     height: 19px;
   }
-}
-
-.social__link-icon {
-  fill: $icon-color;
+  .social__link-icon {
+    fill: $icon-color;
+  }
 
   &:hover,
   &:focus {
-    fill: $base-color;
+    .social__link-icon {
+      fill: $base-color;
+    }
   }
-
   &:active {
-    fill: $base-color;
-    opacity: 0.3;
-  }
+    .social__link-icon {
+      fill: $base-color;
+      opacity: 0.3;
+      }
+   }
 }
 
 @media (min-width: $tablet-width) {
