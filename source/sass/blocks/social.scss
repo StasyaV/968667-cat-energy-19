@@ -26,6 +26,7 @@
     width: 10px;
     height: 19px;
   }
+
   .social__link-icon {
     fill: $icon-color;
   }
@@ -36,6 +37,7 @@
       fill: $base-color;
     }
   }
+
   &:active {
     .social__link-icon {
       fill: $base-color;
