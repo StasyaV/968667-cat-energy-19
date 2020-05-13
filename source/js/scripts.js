@@ -1,14 +1,9 @@
 var mainMenu = document.querySelector('.main-nav');
 var menuToggle = document.querySelector('.menu-button');
 var form = document.querySelector(".form");
-var name = form.querySelector("[name=name]");
-var nameField = form.querySelector(".cat-info__name");
-var weight = form.querySelector("[name=weight]");
-var weightField = form.querySelector(".cat-info__weight");
-var email = form.querySelector("[name=email]");
-var contacts = form.querySelector(".form__contacts-data");
-var phone = form.querySelector("[name=phone]");
-var error = form.querySelector(".error");
+var nameInputs = form.querySelectorAll(".cat-info__input");
+var contactsInputs = form.querySelectorAll(".form__contacts-data-input");
+
 
 mainMenu.classList.remove('main-nav--no-js');
 menuToggle.classList.remove('menu-button--none');
@@ -26,18 +21,28 @@ menuToggle.addEventListener('click', function () {
   }
 });
 
+nameInputs.forEach(function (input) {
+  input.addEventListener("blur", function (evt) {
+    if (!input.value) {
+      input.parentNode.classList.add("error");
+      console.log("Нужно ввести имя кота");
+    } else {
+      input.parentNode.classList.remove("error");
+    }
+  });
+});
+
+contactsInputs.forEach(function (input) {
+  input.addEventListener("blur", function (evt) {
+    if (!input.value) {
+      input.parentNode.classList.add("error");
+      console.log("Нужно ввести контактные данные");
+    } else {
+      input.parentNode.classList.remove("error");
+    }
+  });
+});
+
 form.addEventListener("submit", function (evt) {
-  if (!name.value) {
-    evt.preventDefault();
-    nameField.classList.add("error");
-    console.log("Нужно ввести имя кота");
-  } if (!weight.value) {
-    evt.preventDefault();
-    weightField.classList.add("error");
-    console.log("Нужно ввести вес кота");
-  } if (!email.value || !phone.value) {
-    evt.preventDefault();
-    contacts.classList.add("error");
-    console.log("Нужно ввести контактные данные");
-  }
+  evt.preventDefault();
 });

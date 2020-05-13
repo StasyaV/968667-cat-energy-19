@@ -47,15 +47,15 @@
             <legend class="visually-hidden">Заполните данные кота</legend>
             <p class="cat-info__name">
               <label for="name">Имя:*</label>
-              <input type="text" id="name" name="name" placeholder="Барсик" required>
+              <input class="cat-info__input" type="text" id="name" name="name" placeholder="Барсик" required>
             </p>
             <p class="cat-info__weight">
               <label for="weight">Вес (кг):*</label>
-              <input type="number" id="weight" name="weight" placeholder="7" required>
+              <input class="cat-info__input" type="number" id="weight" name="weight" placeholder="7" required>
             </p>
             <p class="cat-info__age">
               <label for="age">Возраст (лет):</label>
-              <input type="number" id="age" name="age" placeholder="7">
+              <input class="cat-info__input" type="number" id="age" name="age" placeholder="7">
             </p>
           </fieldset>
           <fieldset class="form__goal goal">
@@ -80,14 +80,16 @@
           <div class="form__contacts-block">
             <p class="form__contacts-data form__contacts-data--email">
               <label for="email">E-mail:*</label>
-              <input type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+              <input class="form__contacts-data-input" type="email" id="email" name="email"
+                placeholder="kuklachev@gmail.com" required>
               <svg class="form__contacts-data-icon form__contacts-data-icon--mail" width="18" height="14">
                 <use xlink:href="img/svg/sprite.svg#mail"></use>
               </svg>
             </p>
             <p class="form__contacts-data form__contacts-data--phone">
               <label for="phone">Телефон:*</label>
-              <input type="phone" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+              <input class="form__contacts-data-input" type="phone" id="phone" name="phone"
+                placeholder="8 (960) 900-60-90" required>
               <svg class="form__contacts-data-icon form__contacts-data-icon--phone" width="21" height="21">
                 <use xlink:href="img/svg/sprite.svg#phone"></use>
               </svg>
