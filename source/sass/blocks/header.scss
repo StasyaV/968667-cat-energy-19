@@ -2,10 +2,6 @@
   border-bottom: 1px solid $border-color;
 }
 
-.header-space {
-  margin-bottom: 32px;
-}
-
 .head-wrapper {
   display: flex;
   justify-content: space-between;
@@ -22,7 +18,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
-    margin-bottom: 61px;
+    margin-bottom: 31px;
     border-bottom: none;
   }
 
@@ -30,6 +26,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+      margin: 0;
+      margin-top: 20px;
   }
 
   .head-wrapper {

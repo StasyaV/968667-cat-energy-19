@@ -40,24 +40,29 @@
 @media (min-width: $tablet-width) {
   .example {
     overflow-x: hidden;
-    background: linear-gradient(#ffffff 551px, $background-color 551px);
+    background: linear-gradient(#ffffff 594px, $background-color 594px);
+  }
+
+  .example__block {
+    padding-bottom: 110px;
   }
 
   .example__title {
     font-size: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 64px;
   }
 
   .example__description {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 56px;
+    margin-bottom: 42px;
   }
 
   .example__stat {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 60px;
   }
 
   .example__slider {

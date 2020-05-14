@@ -44,7 +44,9 @@
 @media (min-width: $tablet-width) {
   .toggle {
     position: absolute;
-    bottom: 30px;
+    bottom: -40px;
+    left: 49%;
+    transform: translateX(-54%);
     z-index: 5;
     font-size: 20px;
     line-height: 20px;

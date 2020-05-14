@@ -19,6 +19,10 @@
 
 .footer__contacts-address {
   margin: 0;
+
+  p {
+    margin: 0;
+  }
 }
 
 .footer__wrapper {
@@ -43,16 +47,16 @@
   display: flex;
   justify-content: space-between;
   text-align: left;
-  padding-top: 31px;
+  padding-top: 26px;
   padding-bottom: 26px;
 }
 
 .footer__logo {
-  margin-bottom: 26px;
+  margin-bottom: 30px;
 }
 
 .footer__map {
-  height: 347px;
+  height: 344px;
   margin: 0 auto;
   background: no-repeat center url("../img/bg-map-mobile@1x.png") $background-color;
 
@@ -77,13 +81,21 @@
   }
 
   .footer__contacts-address {
-    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 190px;
     font-size: 16px;
+    line-height: 20px;
     text-align: right;
   }
 
   .footer__contacts-block {
     margin: 0 auto;
+    padding-top: 63px;
+    padding-bottom: 61px;
+    padding-right: 46px;
+    padding-left: 41px;
   }
 
   .footer__container {
@@ -104,6 +116,7 @@
   }
 
   .footer__map {
+    height: 400px;
     background-image: url("../img/bg-map-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

@@ -13,8 +13,8 @@
 }
 
 .copyright__logo-icon {
-  width: 35px;
-  height: 55px;
+  width: 34px;
+  height: 60px;
   fill: $icon-color;
   margin-left: auto;
 }
@@ -50,14 +50,13 @@
     p {
       display: inline-block;
       margin-right: 23px;
+      vertical-align: middle;
+      height: 30px;
     }
   }
 
-  .copyright__logo {
-    display: inline-block;
-    width: 27px;
-    height: 34px;
-    line-height: 48px;
-    vertical-align: middle;
+  .copyright__logo-icon {
+    width: 34px;
+    height: 60px;
   }
 }

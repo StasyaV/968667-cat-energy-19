@@ -83,32 +83,43 @@
   .process {
     margin: 0 auto;
     border-bottom: 1px solid $border-color;
-    margin-bottom: 51px;
+    margin-bottom: 25px;
   }
 
   .process__title {
-    margin-bottom: 63px;
+    margin-bottom: 74px;
     font-size: 60px;
   }
 
   .process__list {
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: 101px;
   }
 
   .process__item {
     position: relative;
-    width: 215px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-bottom: 137px;
+    margin-bottom: 137px;
     font-size: 16px;
     line-height: 24px;
 
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 30px;
+    }
+
     &--step1,
     &--step3 {
-      margin-right: 187px;
+      margin-right: 133px;
     }
 
     &::after {
