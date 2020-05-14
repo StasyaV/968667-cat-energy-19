@@ -35,11 +35,10 @@
 
 .menu__link {
   display: block;
-  height: 49px;
   margin: 0;
-  color: $font-black;
+  color: #111;
   text-decoration: none;
-  padding: 13px 20px;
+  padding: 20px 20px;
   word-wrap: normal;
 
   &:hover,
@@ -78,8 +77,8 @@
   }
 
   &--open {
-    width: 19px;
-    height: 46px;
+    width: 20px;
+    height: 48px;
     background-image: url("../img/svg/icon-close.svg");
   }
 

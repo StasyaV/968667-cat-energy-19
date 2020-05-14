@@ -2,7 +2,6 @@ window.addEventListener("load", function () {
   var mainMenu = document.querySelector('.main-nav');
   var menuToggle = document.querySelector('.menu-button');
   var form = document.querySelector(".form");
-  var infoInputs = form.querySelectorAll(".info-input");
 
 
   mainMenu.classList.remove('main-nav--no-js');
@@ -21,18 +20,20 @@ window.addEventListener("load", function () {
     }
   });
 
-  infoInputs.forEach(function (input) {
-    input.addEventListener("blur", function (evt) {
-      if (!input.value) {
-        input.parentNode.classList.add("error");
-        console.log("Нужно ввести имя кота");
-      } else {
-        input.parentNode.classList.remove("error");
-      }
+  if (infoInputs) {
+    var infoInputs = form.querySelectorAll(".info-input");
+    infoInputs.forEach(function (input) {
+      input.addEventListener("blur", function (evt) {
+        if (!input.value) {
+          input.parentNode.classList.add("error");
+          console.log("Нужно ввести имя кота");
+        } else {
+          input.parentNode.classList.remove("error");
+        }
+      });
     });
-  });
-
-  form.addEventListener("submit", function (evt) {
-    evt.preventDefault();
-  });
+    form.addEventListener("submit", function (evt) {
+      evt.preventDefault();
+    });
+  }
 });

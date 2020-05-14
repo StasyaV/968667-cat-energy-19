@@ -33,12 +33,12 @@
   }
 }
 
-.toggle__before {
-  margin-left: auto;
+.toggle__before-after--before {
+  margin-left: 43px;
 }
 
-.toggle__after {
-  margin-right: auto;
+.toggle__before-after--after {
+  margin-right: 38px;
 }
 
 @media (min-width: $tablet-width) {

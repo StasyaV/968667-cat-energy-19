@@ -12,10 +12,17 @@
   font-size: 16px;
   color: $font-black;
   text-transform: uppercase;
+  margin: 0;
+  max-width: 125px;
+  margin-right: 29px;
+}
+
+.footer__contacts-address {
+  margin: 0;
 }
 
 .footer__wrapper {
-  padding: 40px 30px;
+  padding: 53px 0;
   background-color: $background-color;
 }
 
@@ -38,14 +45,10 @@
   text-align: left;
   padding-top: 31px;
   padding-bottom: 26px;
-
-  p {
-    margin: 0;
-  }
 }
 
 .footer__logo {
-  margin-bottom: 31px;
+  margin-bottom: 26px;
 }
 
 .footer__map {

@@ -3,7 +3,7 @@
   font-family: $font-oswald;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 240px;
+  margin-bottom: 194px;
   background: no-repeat center url("../img/index-background-mobile@1x.jpg") #63a736;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -16,8 +16,8 @@
 .promo__block {
   display: flex;
   flex-direction: column;
-  padding: 30px 20px;
-  height: 305px;
+  padding: 25px 20px;
+  height: 308px;
 }
 
 .promo__title {
@@ -31,7 +31,7 @@
   margin: 0;
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 29px;
+  margin-bottom: 21px;
 }
 
 .promo__button {

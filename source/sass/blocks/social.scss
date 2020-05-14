@@ -1,10 +1,10 @@
 .social {
   @include list-reset();
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 24px 0;
+  align-items: baseline;
+  padding: 19px 73px;
   margin: 0;
+  margin-bottom: 11px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -15,11 +15,13 @@
   &--vk {
     width: 22px;
     height: 12px;
+    margin-right: 36px;
   }
 
   &--insta {
     width: 17px;
     height: 17px;
+    margin-right: 40px;
   }
 
   &--fb {

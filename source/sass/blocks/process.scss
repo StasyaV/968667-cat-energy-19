@@ -5,7 +5,7 @@
   line-height: 18px;
   text-align: left;
   margin: 0 auto;
-  margin-bottom: 42px;
+  margin-bottom: 20px;
 }
 
 .process__list {
@@ -18,7 +18,7 @@
 .process__title {
   @include title();
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .process__item {
@@ -34,11 +34,9 @@
   &::before {
     content: "";
     display: block;
-    width: 60px;
+    width: 67px;
     height: 60px;
-
     margin-right: 20px;
-
     background-color: $base-color;
     background-repeat: no-repeat;
     background-position: center;

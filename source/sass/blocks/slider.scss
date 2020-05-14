@@ -7,8 +7,7 @@
 
 .slider__image {
   width: 100%;
-
-  margin-bottom: 35px;
+  margin-bottom: 21px;
 }
 
 .slider__slide {
@@ -28,6 +27,9 @@
   &--slide-2 {
     width: 0%;
   }
+}
+.slider__slide-image {
+  height: 100%;
 }
 
 @media (min-width: $tablet-width) {

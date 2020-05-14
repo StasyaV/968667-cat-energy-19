@@ -8,16 +8,22 @@
   background-color: $background-color;
 }
 
+.example__block {
+  padding-top: 18px;
+  padding-bottom: 20px;
+}
+
 .example__title {
   @include title();
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 23px;
 }
 
 .example__description {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 15px;
   font-size: 14px;
+  line-height: 18px;
   font-family: $font-arial;
   color: $font-grey;
   text-align: left;
@@ -28,6 +34,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 38px;
 }
 
 @media (min-width: $tablet-width) {
