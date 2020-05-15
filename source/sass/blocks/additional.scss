@@ -10,6 +10,12 @@
   margin-bottom: 39px;
 }
 
+@media (min-width: $tablet-width) {
+  .additional {
+    margin-bottom: 65px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .additional-block {
     flex-direction: row;

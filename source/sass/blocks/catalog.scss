@@ -6,14 +6,12 @@
 
 .catalog__title {
   @include title();
-  margin-bottom: 35px;
-  margin-left: 20px;
+  margin-bottom: 27px;
 }
 
 @media (min-width: $tablet-width) {
   .catalog__title {
-    margin-top: 65px;
-    margin-bottom: 110px;
+    margin-bottom: 90px;
     margin-left: auto;
     font-size: 60px;
     line-height: 60px;

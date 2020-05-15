@@ -73,6 +73,8 @@
   background-color: transparent;
 
   &--closed {
+    width: 24px;
+    height: 49px;
     background-image: url("../img/svg/icon-mobile-menu.svg");
   }
 
