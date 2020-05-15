@@ -151,7 +151,12 @@
   }
 
   .stat__data {
+    padding-top: 23px;
+    text-transform: uppercase;
+
     &--days {
+      padding-right: 9px;
+
       &::before {
         left: 3px;
       }
@@ -159,7 +164,7 @@
   }
 
   .stat__data-type {
-    margin-bottom: 13px;
+    margin-bottom: 10px;
 
     &--days {
       padding-left: 0;
