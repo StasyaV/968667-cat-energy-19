@@ -60,3 +60,11 @@
     height: 60px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    p {
+      margin-right: 16px;
+    }
+  }
+}

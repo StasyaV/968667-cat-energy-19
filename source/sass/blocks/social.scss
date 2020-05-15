@@ -1,7 +1,7 @@
 .social {
   @include list-reset();
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   padding: 19px 73px;
   margin: 0;
   margin-bottom: 7px;
@@ -80,5 +80,11 @@
         height: 23px;
       }
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    margin-left: 19px;
   }
 }

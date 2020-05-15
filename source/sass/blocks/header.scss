@@ -33,14 +33,23 @@
   .head-wrapper {
     padding: 0;
     margin: 0;
+    margin-right: 87px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .header {
+    margin-bottom: 86px;
+  }
+
   .header__container {
     min-width: 1220px;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 55px;
+  }
+
+  .head-wrapper {
+    margin-right: auto;
   }
 
   .header-index {

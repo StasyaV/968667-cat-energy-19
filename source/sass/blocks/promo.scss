@@ -100,15 +100,23 @@
   .promo__block {
     display: flex;
     min-height: 532px;
-    margin-bottom: 80px;
+    margin-bottom: 45px;
     margin-left: auto;
   }
 
   .promo__title {
     width: 440px;
+    margin-bottom: 42px;
+  }
+
+  .promo__description {
+    margin-bottom: 52px;
   }
 
   .promo__image {
-    top: -321px;
+    width: 552px;
+    height: 499px;
+    top: -367px;
+    left: 647px;
   }
 }

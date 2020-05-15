@@ -78,19 +78,19 @@
   .example {
     flex-direction: row;
     padding: 0;
-    background: linear-gradient(#ffffff 31%, $background-color 31%);
+    background: linear-gradient(#ffffff 220px, $background-color 220px);
   }
-
 
   .example__block {
     display: flex;
     justify-content: space-between;
     padding-top: 90px;
+    padding-bottom: 0;
     overflow: initial;
   }
 
   .example__wrap {
-    width: 40%;
+    width: 38%;
   }
 
   .example__title {
@@ -98,6 +98,6 @@
   }
 
   .example__description {
-    margin-bottom: 70px;
+    margin-bottom: 58px;
   }
 }

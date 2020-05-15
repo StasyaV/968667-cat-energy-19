@@ -73,6 +73,10 @@
     position: relative;
   }
 
+  .footer__wrapper {
+    padding: 45px 0;
+  }
+
   .footer__contacts-invitation {
     max-width: 200px;
     text-align: left;
@@ -135,16 +139,24 @@
 
   .footer__contacts-block {
     position: absolute;
-    top: 50%;
+    top: 45%;
     z-index: 10;
     transform: translateY(-50%);
     width: 570px;
     height: 201px;
     align-items: center;
-    padding-top: 25px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-top: 67px;
+    padding-left: 76px;
+    padding-right: 55px;
     background-color: #ffffff;
+  }
+
+  .footer__contacts-address {
+    text-align: left;
+
+    &:first-child {
+      margin-bottom: 21px;
+    }
   }
 
   .footer__map {
@@ -154,5 +166,9 @@
       background-image: url("../img/bg-map-desktop@2x.png");
       background-size: 1440px auto;
     }
+  }
+
+  .footer__wrapper {
+    padding: 31px 0;
   }
 }

@@ -79,24 +79,31 @@
 
 @media (min-width: $desktop-width) {
   .slider {
-    width: 70%;
-    margin-top: -30px;
+    width: 60%;
+    margin: 0;
+    margin-top: -58px;
+    margin-right: -81px;
     background-color: transparent;
   }
 
+  .slider__image {
+    margin-right: 0;
+  }
+
   .slider__slide {
-    height: 700px;
-    padding-left: 50px;
+    height: 517px;
+    padding: 0;
 
     &--slide-1 {
-      background: linear-gradient(to bottom, #ffffff 25%, $background-color 25%);
+      background: linear-gradient(to bottom, #ffffff 188px, $background-color 188px);
     }
 
     &--slide-2 {
-      background: linear-gradient(to bottom, #ffffff 25%, $cats-background 25%);
+      background: linear-gradient(to bottom, #ffffff 188px, $cats-background 188px);
 
       &::after {
-        height: 525px;
+        height: 459px;
+        bottom: -132px;
       }
     }
   }

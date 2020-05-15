@@ -159,10 +159,19 @@
 }
 
 @media (min-width: $desktop-width) {
+  .process__list {
+    padding-bottom: 40px;
+  }
+
   .process__item {
-    width: 200px;
+    width: 245px;
     padding: 0;
-    margin-right: 121px;
+    margin-right: 79px;
+    margin-bottom: 0;
+
+    &::before {
+      margin-bottom: 32px;
+    }
 
     &:last-child {
       margin-right: 0;
@@ -170,11 +179,11 @@
   }
 
   .process {
-    margin-bottom: 120px;
+    margin-bottom: 0;
     border-bottom: none;
   }
 
   .process__title {
-    margin-bottom: 60px;
+    margin-bottom: 71px;
   }
 }
