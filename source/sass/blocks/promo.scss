@@ -84,13 +84,14 @@
 
   .promo__image-wrapper {
     position: relative;
+    width: 150%;
   }
 
   .promo__image {
     position: absolute;
     top: -80px;
     z-index: -1;
-    left: 47%;
+    left: 28%;
     width: 709px;
     height: 609px;
     transform: translateX(-50%);
@@ -119,5 +120,9 @@
     height: 499px;
     top: -367px;
     left: 647px;
+  }
+  .promo__image-wrapper {
+    position: relative;
+    width: 100%;
   }
 }
