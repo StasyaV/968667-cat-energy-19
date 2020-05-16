@@ -53,6 +53,7 @@
       border-bottom: none;
     }
   }
+
   .add-item__name {
     font-size: 20px;
     line-height: 20px;
@@ -87,18 +88,16 @@
     border-right: none;
     border-left: none;
     padding: 16px 0;
-
-    &:first-child {
-      border-top: none;
-    }
   }
 
   .add-item__button {
-    width: 100%;
+    width: 245px;
+    margin: 0;
   }
 
   .add-item__feature {
-    margin-right: 39px;
+    width: 44%;
+    margin-right: 37px;
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 0;
@@ -110,6 +109,7 @@
     align-items: center;
     flex-grow: 1;
     width: auto;
+    margin: 0;
 
     p {
       margin: 0;
@@ -119,5 +119,6 @@
   .add-item__name {
     font-size: 20px;
     line-height: 20px;
+    margin: 0;
   }
 }
