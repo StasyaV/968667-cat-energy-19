@@ -201,7 +201,7 @@ input[type="checkbox"]:checked + label::after {
 .form__notice {
   font-size: 14px;
   line-height: 16px;
-  font-family: arial;
+  font-family: $font-arial;
   color: $font-grey;
   text-align: center;
   text-transform: none;
@@ -308,6 +308,7 @@ input:focus + .form__contacts-data-icon {
   .form-page {
     margin-bottom: 54px;
   }
+
   .form {
     padding: 0 37px;
 
@@ -441,19 +442,20 @@ input:focus + .form__contacts-data-icon {
     }
 
     label {
-    margin-right: 14px;
+      margin-right: 14px;
     }
   }
 
   .form__contacts-data-icon {
     &--mail {
-    right: 17px;
+      right: 17px;
+    }
+
+    &--phone {
+      right: 13px;
+      top: 19px;
+    }
   }
-  &--phone {
-    right: 13px;
-    top: 19px;
-  }
-}
 
   .form__comments {
     margin-bottom: 65px;
@@ -476,7 +478,8 @@ input:focus + .form__contacts-data-icon {
     height: 40px;
     margin-right: 18px;
   }
-  input[type=checkbox]:checked+label::after {
+
+  input[type="checkbox"]:checked + label::after {
     top: 10px;
     left: 10px;
   }
