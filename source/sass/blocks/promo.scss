@@ -61,6 +61,7 @@
     background-image: none;
     background-color: transparent;
     text-align: left;
+    position: relative;
   }
 
   .promo__title {
@@ -91,16 +92,11 @@
     }
   }
 
-  .promo__image-wrapper {
-    position: relative;
-    width: 150%;
-  }
-
   .promo__image {
     position: absolute;
-    top: -80px;
+    top: 229px;
     z-index: -1;
-    left: 28%;
+    left: 50%;
     width: 709px;
     height: 609px;
     transform: translateX(-50%);
@@ -127,12 +123,7 @@
   .promo__image {
     width: 552px;
     height: 499px;
-    top: -367px;
-    left: 647px;
-  }
-
-  .promo__image-wrapper {
-    position: relative;
-    width: 100%;
+    top: -56px;
+    left: 765px;
   }
 }
