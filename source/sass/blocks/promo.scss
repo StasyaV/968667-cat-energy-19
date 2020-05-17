@@ -38,6 +38,11 @@
   order: 1;
   display: block;
   text-decoration: none;
+  width: 100%;
+
+  &:active {
+    outline: 1px solid $hover-button;
+  }
 }
 
 .promo__image {
@@ -80,6 +85,10 @@
     font-size: 20px;
     line-height: 52px;
     order: 0;
+
+    &:active {
+      outline: none;
+    }
   }
 
   .promo__image-wrapper {
