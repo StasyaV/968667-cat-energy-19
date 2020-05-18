@@ -7,8 +7,7 @@
 
 .slider__image {
   width: 100%;
-
-  margin-bottom: 35px;
+  margin-bottom: 21px;
 }
 
 .slider__slide {
@@ -30,39 +29,44 @@
   }
 }
 
+.slider__slide-image {
+  height: 100%;
+}
+
 @media (min-width: $tablet-width) {
   .slider {
     width: 768px;
   }
 
   .slider__image {
+    margin-right: 53px;
     margin-bottom: 0;
   }
 
   .slider__slide {
-    height: 570px;
-    padding-left: 20px;
+    height: 519px;
+    padding-left: 40px;
 
     &--slide-1 {
-      justify-content: end;
+      justify-content: start;
       width: 50%; // Управляя шириной показываем часть слайдера
-      background: linear-gradient(to bottom, #ffffff 30%, $background-color 30%);
+      background: linear-gradient(to bottom, #ffffff 32%, $background-color 32%);
       overflow: hidden;
     }
 
     &--slide-2 {
       position: relative;
       width: 100%;
-      background: linear-gradient(to bottom, #ffffff 30%, $cats-background 30%);
+      background: linear-gradient(to bottom, #ffffff 32%, $cats-background 32%);
 
       &::after {
         content: "";
         position: absolute;
-        left: 100%;
-        bottom: 0;
-        width: 100%;
-        z-index: 10;
-        height: 400px;
+        left: 50%;
+        bottom: -109px;
+        width: 100vw;
+        height: 462px;
+        z-index: -1;
         background-color: $cats-background;
       }
     }
@@ -75,24 +79,31 @@
 
 @media (min-width: $desktop-width) {
   .slider {
-    width: 70%;
-    margin-top: -30px;
+    width: 60%;
+    margin: 0;
+    margin-top: -58px;
+    margin-right: -81px;
     background-color: transparent;
   }
 
+  .slider__image {
+    margin-right: 0;
+  }
+
   .slider__slide {
-    height: 700px;
-    padding-left: 50px;
+    height: 517px;
+    padding: 0;
 
     &--slide-1 {
-      background: linear-gradient(to bottom, #ffffff 25%, $background-color 25%);
+      background: linear-gradient(to bottom, #ffffff 188px, $background-color 188px);
     }
 
     &--slide-2 {
-      background: linear-gradient(to bottom, #ffffff 25%, $cats-background 25%);
+      background: linear-gradient(to bottom, #ffffff 188px, $cats-background 188px);
 
       &::after {
-        height: 525px;
+        height: 477px;
+        bottom: -149px;
       }
     }
   }

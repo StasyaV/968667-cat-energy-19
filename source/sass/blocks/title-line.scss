@@ -1,7 +1,7 @@
 .title-line {
   position: relative;
   display: inline-block;
-  padding-right: 25px;
+  padding-right: 36px;
   background-color: #ffffff;
 
   &::after,
@@ -23,13 +23,18 @@
 
   &::before {
     right: 100%;
-    margin-right: 25px;
+    margin-right: 39px;
     display: none;
   }
 }
 
 @media (min-width: $tablet-width) {
   .title-line {
+    &::before,
+    &::after {
+      top: -5px;
+    }
+
     &::before {
       display: block;
     }

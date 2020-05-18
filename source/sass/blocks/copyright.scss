@@ -2,8 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 31px 20px;
-  padding-bottom: 0;
   font-family: $font-arial;
   font-size: 16px;
   line-height: 16px;
@@ -14,13 +12,9 @@
   margin: 0;
 }
 
-.copyright__logo {
-  width: 27px;
-  height: 34px;
-  object-fit: contain;
-}
-
 .copyright__logo-icon {
+  width: 34px;
+  height: 60px;
   fill: $icon-color;
   margin-left: auto;
 }
@@ -56,14 +50,21 @@
     p {
       display: inline-block;
       margin-right: 23px;
+      vertical-align: middle;
+      height: 30px;
     }
   }
 
-  .copyright__logo {
-    display: inline-block;
-    width: 27px;
-    height: 34px;
-    line-height: 48px;
-    vertical-align: middle;
+  .copyright__logo-icon {
+    width: 34px;
+    height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    p {
+      margin-right: 16px;
+    }
   }
 }

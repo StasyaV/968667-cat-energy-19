@@ -1,10 +1,10 @@
 .item {
-  padding: 25px 20px;
+  padding: 0 18px;
+  padding-bottom: 21px;
   font-family: $font-arial;
   color: $font-grey;
   font-size: 12px;
   line-height: 16px;
-
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
 
@@ -14,6 +14,7 @@
 
   &--show-more {
     position: relative;
+    padding-top: 20px;
     text-align: center;
 
     p {
@@ -28,14 +29,15 @@
       height: 31px;
       margin: 0 auto;
       margin-bottom: 25px;
-      background-image: url("../img/svg/icon-plus-mobile.svg");
+      background-image: url("../img/icon-plus-mobile.svg");
       background-repeat: no-repeat;
       background-position: center;
       opacity: 0.2;
     }
 
     .item-features__name {
-      margin-bottom: 11px;
+      width: auto;
+      margin-bottom: 4px;
     }
 
     .item-features__data {
@@ -46,8 +48,9 @@
 
 .item-features__name {
   display: block;
+  width: 100px;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   font-family: $font-oswald;
   color: $font-black;
   font-size: 16px;
@@ -85,6 +88,11 @@
   text-decoration: none;
 }
 
+.item__image-products {
+  width: 140px;
+  height: auto;
+}
+
 @media (min-width: $tablet-width) {
   .item {
     display: flex;
@@ -92,10 +100,12 @@
     align-items: center;
     width: 324px;
     min-height: 477px;
+    padding: 0 38px;
+    padding-bottom: 38px;
     margin-right: 40px;
-    margin-bottom: 92px;
+    margin-bottom: 60px;
     text-align: center;
-    background: linear-gradient(#ffffff 20%, $background-color 10%);
+    background: linear-gradient(#ffffff 17%, $background-color 17%);
     border: none;
 
     &:nth-child(2n) {
@@ -107,28 +117,37 @@
     }
 
     &--show-more {
-      min-height: 427px;
+      min-height: 415px;
       margin-top: auto;
       background: #ffffff;
       border: 1px solid $border-color;
 
+      @media screen {
+        height: 415px;
+      }
+
       .item__image {
         width: 61px;
         min-height: 61px;
-        background-image: url("../img/svg/icon-plus.svg");
+        background-image: url("../img/icon-plus.svg");
       }
 
       p {
-        padding: 0 40px;
         border-bottom: none;
       }
 
       .item-features__name {
+        padding: 0 40px;
         margin-bottom: 28px;
       }
 
+      .item-features__data {
+        padding: 0 20px;
+      }
+
       .item__image-wrapper {
-        height: 61px;
+        height: 111px;
+        margin-top: 38px;
       }
     }
   }
@@ -137,16 +156,30 @@
     margin-top: auto;
   }
 
+  .item__button {
+    width: 249px;
+  }
+
   .item__info {
     flex-direction: column;
-    margin-top: auto;
-    margin-bottom: 33px;
+    margin-bottom: 31px;
   }
 
   .item__image {
-    margin-bottom: 40px;
-    min-height: 200px;
+    width: 150%;
+    min-height: 210px;
+    margin-bottom: 36px;
     display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    @media screen {
+      height: 210px;
+    }
+  }
+
+  .item__image-products {
+    width: 324px;
   }
 
   .item__image-wrapper {
@@ -154,14 +187,17 @@
   }
 
   .item-features__name {
-    padding: 1px 65px;
+    width: 155px;
+    margin: 0 auto;
     text-align: center;
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 18px;
   }
 
   .item-features__data {
-    padding: 10px 0;
+    width: 250px;
+    padding: 8px 0;
     font-size: 16px;
     line-height: 16px;
     border-bottom: 1px solid $border-color;
@@ -173,10 +209,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 28px;
   }
 
   .item {
     width: 245px;
+    background: linear-gradient(#ffffff 15%, $background-color 15%);
+    margin-bottom: 74px;
 
     &:nth-child(2n) {
       margin-right: 40px;
@@ -191,25 +230,50 @@
     }
 
     &--show-more {
+      min-height: 425px;
+      background: #ffffff;
+
       p {
         padding: 0;
       }
 
       .item-features__name {
-        margin-bottom: 34px;
+        margin-bottom: 30px;
+        width: 250px;
+      }
+
+      .item__image-wrapper {
+        margin-top: 41px;
+        height: 108px;
+      }
+
+      .item-features__data {
+        width: 250px;
       }
     }
   }
 
+  .item__image {
+    margin-bottom: 37px;
+  }
+
+  .item__image-products {
+    width: 245px;
+  }
+
+  .item-features__data {
+    width: 170px;
+  }
+
   .item-features__name {
-    padding: 0 28px;
+    margin-bottom: 14px;
   }
 
   .item__button {
-    min-width: 169px;
+    width: 169px;
 
     &--plus {
-      min-width: 169px;
+      width: 169px;
     }
   }
 }

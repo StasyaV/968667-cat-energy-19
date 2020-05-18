@@ -1,9 +1,10 @@
 .features__container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 32px;
+  margin-bottom: 15px;
   font-family: $font-arial;
   font-size: 14px;
+  line-height: 18px;
   font-weight: normal;
   color: $font-grey;
 }
@@ -33,7 +34,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 29px;
+    top: 23px;
     display: block;
     width: 50px;
     height: 50px;
@@ -46,22 +47,21 @@
     display: block;
     width: 67px;
     height: 49px;
-    background-image: url("../img/svg/icon-cat-slim.svg");
+    background-image: url("../img/icon-cat-slim.svg");
     background-repeat: no-repeat;
     background-size: auto;
     position: absolute;
-    top: 27px;
-    left: 28px;
+    top: 22px;
+    left: 30px;
     z-index: 1;
   }
 
   &--mass-gain::after {
-    left: 9px;
-    top: 39px;
+    left: 15px;
+    top: 33px;
     width: 70px;
     height: 27px;
-    background-image: url("../img/svg/icon-cat-pro.svg");
-    background-position: center;
+    background-image: url("../img/icon-cat-pro.svg");
   }
 
   &--fat-burn {
@@ -71,8 +71,8 @@
 
 .features__description {
   margin: 0;
-  margin-bottom: 20px;
-  padding-bottom: 23px;
+  margin-bottom: 18px;
+  padding-bottom: 25px;
   border-bottom: 1px solid $border-color;
 }
 
@@ -90,8 +90,8 @@
     display: block;
     width: 40px;
     height: 12px;
-    margin-left: 24px;
-    background-image: url("../img/svg/icon-right-arrow-long.svg");
+    margin-left: 10px;
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
   }
 
@@ -99,7 +99,7 @@
   &:focus {
     &::after {
       width: 34px;
-      background-image: url("../img/svg/icon-right-arrow-verylong.svg");
+      background-image: url("../img/icon-right-arrow-verylong.svg");
     }
   }
 
@@ -109,6 +109,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .features__container {
+    margin-bottom: 45px;
+  }
+
   .features__title {
     margin: 0;
     margin-bottom: 29px;
@@ -119,87 +123,106 @@
   .features__description {
     width: 384px;
     font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
     border-bottom: none;
   }
 
   .features__button {
     font-size: 20px;
+
+    &::after {
+      margin-left: 23px;
+    }
   }
 
   .features__block {
-    padding-top: 70px;
+    padding-top: 74px;
     padding-right: 60px;
     padding-bottom: 60px;
-    padding-left: 55px;
+    padding-left: 52px;
 
     &::before {
       width: 200px;
       height: 200px;
-      right: 30px;
-      top: 62px;
+      right: 57px;
+      top: 92px;
     }
 
     &::after {
       width: 141px;
       height: 194px;
-      top: 52px;
-      left: 534px;
+      top: 79px;
+      left: 477px;
     }
 
     &--mass-gain {
       &::after {
-        left: 418px;
-        top: 106px;
+        left: 413px;
+        top: 134px;
         width: 268px;
         height: 113px;
       }
+
+      .features__description {
+        margin-bottom: 55px;
+      }
+    }
+
+    &--fat-burn {
+      margin-bottom: 35px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .features {
-    margin-bottom: 65px;
-  }
-
   .features__container {
     flex-direction: row;
     justify-content: space-around;
     padding: 0;
+    margin-bottom: 76px;
   }
 
   .features__block {
-    margin: 0;
+    margin: 0 auto;
+    padding-top: 77px;
 
     &::before {
       width: 100px;
       height: 100px;
-      top: 28px;
+      top: 49px;
       left: 55px;
     }
 
     &::after {
-      top: 29px;
-      left: 76px;
+      top: 43px;
+      left: 68px;
       width: 71px;
       height: 97px;
     }
 
     &--mass-gain {
       &::after {
-        top: 52px;
-        left: 40px;
+        top: 71px;
+        left: 36px;
         width: 134px;
         height: 57px;
+      }
+
+      .features__description {
+        margin-bottom: 32px;
       }
     }
   }
 
   .features__description {
     width: 462px;
+    padding: 0;
+    margin-bottom: 32px;
   }
 
   .features__title {
-    margin-left: 150px;
+    margin-left: 164px;
+    margin-bottom: 76px;
   }
 }

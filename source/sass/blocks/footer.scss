@@ -12,10 +12,21 @@
   font-size: 16px;
   color: $font-black;
   text-transform: uppercase;
+  margin: 0;
+  max-width: 125px;
+  margin-right: 29px;
+}
+
+.footer__contacts-address {
+  margin: 0;
+
+  p {
+    margin: 0;
+  }
 }
 
 .footer__wrapper {
-  padding: 40px 30px;
+  padding: 53px 0;
   background-color: $background-color;
 }
 
@@ -36,22 +47,19 @@
   display: flex;
   justify-content: space-between;
   text-align: left;
-  padding-top: 31px;
+  padding-top: 26px;
   padding-bottom: 26px;
-
-  p {
-    margin: 0;
-  }
 }
 
 .footer__logo {
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 }
 
 .footer__map {
-  height: 347px;
+  height: 344px;
   margin: 0 auto;
   background: no-repeat center url("../img/bg-map-mobile@1x.png") $background-color;
+  overflow: hidden;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.png");
@@ -66,6 +74,10 @@
     position: relative;
   }
 
+  .footer__wrapper {
+    padding: 45px 0;
+  }
+
   .footer__contacts-invitation {
     max-width: 200px;
     text-align: left;
@@ -74,13 +86,21 @@
   }
 
   .footer__contacts-address {
-    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 190px;
     font-size: 16px;
+    line-height: 20px;
     text-align: right;
   }
 
   .footer__contacts-block {
     margin: 0 auto;
+    padding-top: 63px;
+    padding-bottom: 61px;
+    padding-right: 46px;
+    padding-left: 41px;
   }
 
   .footer__container {
@@ -101,6 +121,7 @@
   }
 
   .footer__map {
+    height: 400px;
     background-image: url("../img/bg-map-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -119,15 +140,24 @@
 
   .footer__contacts-block {
     position: absolute;
-    top: 50%;
+    top: 45%;
+    z-index: 10;
     transform: translateY(-50%);
     width: 570px;
     height: 201px;
     align-items: center;
-    padding-top: 25px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-top: 67px;
+    padding-left: 76px;
+    padding-right: 55px;
     background-color: #ffffff;
+  }
+
+  .footer__contacts-address {
+    text-align: left;
+
+    &:first-child {
+      margin-bottom: 21px;
+    }
   }
 
   .footer__map {
@@ -137,5 +167,9 @@
       background-image: url("../img/bg-map-desktop@2x.png");
       background-size: 1440px auto;
     }
+  }
+
+  .footer__wrapper {
+    padding: 31px 0;
   }
 }

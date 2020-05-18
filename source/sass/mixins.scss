@@ -20,7 +20,18 @@
   font-size: 16px;
   line-height: 18px;
   font-family: $font-oswald;
-  font-weight: 500;
+  font-weight: normal;
   color: $font-grey;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  @mixin placeholder {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @mixin title() {
+    font-size: 60px;
+  }
 }

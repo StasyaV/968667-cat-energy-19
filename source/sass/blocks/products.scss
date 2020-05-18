@@ -16,6 +16,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 75px;
   }
 
   .products__container {
@@ -25,10 +26,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .products__list {
-    margin-bottom: 89px;
-  }
-
   .products__container {
     padding-left: 40px;
     padding-right: 40px;

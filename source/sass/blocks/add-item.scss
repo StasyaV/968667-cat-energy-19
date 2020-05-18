@@ -1,5 +1,5 @@
 .add-item {
-  padding: 10px 0;
+  padding-top: 8px;
   border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
 
@@ -17,7 +17,7 @@
   text-decoration: none;
   text-align: left;
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .add-item__feature {
@@ -27,6 +27,7 @@
   font-family: $font-arial;
   color: $font-grey;
   font-size: 14px;
+  line-height: 14px;
 
   p {
     margin: 0;
@@ -35,6 +36,7 @@
 
 .add-item__button {
   width: 100%;
+  margin-bottom: 16px;
 }
 
 @media (min-width: $tablet-width) {
@@ -43,17 +45,25 @@
     justify-content: space-between;
     flex-wrap: wrap;
     border: 1px solid $border-color;
-    padding: 28px 37px;
+    padding: 0 37px;
+    padding-top: 26px;
+    padding-bottom: 12px;
 
     &:not(:last-child) {
       border-bottom: none;
     }
   }
 
+  .add-item__name {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   .add-item__info {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 11px;
   }
 
   .add-item__button {
@@ -63,6 +73,8 @@
   .add-item__feature {
     display: flex;
     justify-content: space-between;
+    font-size: 16px;
+    line-height: 20px;
 
     p:first-child {
       margin-right: 52px;
@@ -76,19 +88,16 @@
     border-right: none;
     border-left: none;
     padding: 16px 0;
-
-    &:first-child {
-      border-top: none;
-    }
   }
 
-
   .add-item__button {
-    width: 100%;
+    width: 245px;
+    margin: 0;
   }
 
   .add-item__feature {
-    margin-right: 39px;
+    width: 44%;
+    margin-right: 37px;
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 0;
@@ -100,6 +109,7 @@
     align-items: center;
     flex-grow: 1;
     width: auto;
+    margin: 0;
 
     p {
       margin: 0;
@@ -109,5 +119,6 @@
   .add-item__name {
     font-size: 20px;
     line-height: 20px;
+    margin: 0;
   }
 }

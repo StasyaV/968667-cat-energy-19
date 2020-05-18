@@ -3,7 +3,7 @@
   font-family: $font-oswald;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 240px;
+  margin-bottom: 194px;
   background: no-repeat center url("../img/index-background-mobile@1x.jpg") #63a736;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -16,8 +16,8 @@
 .promo__block {
   display: flex;
   flex-direction: column;
-  padding: 30px 20px;
-  height: 305px;
+  padding: 25px 20px;
+  height: 308px;
 }
 
 .promo__title {
@@ -31,13 +31,18 @@
   margin: 0;
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 29px;
+  margin-bottom: 21px;
 }
 
 .promo__button {
   order: 1;
   display: block;
   text-decoration: none;
+  width: 100%;
+
+  &:active {
+    outline: 1px solid $hover-button;
+  }
 }
 
 .promo__image {
@@ -47,7 +52,7 @@
 @media (min-width: $tablet-width) {
   .promo {
     background: none;
-    margin-bottom: 0;
+    margin-bottom: 45px;
   }
 
   .promo__block {
@@ -56,34 +61,44 @@
     background-image: none;
     background-color: transparent;
     text-align: left;
+    position: relative;
   }
 
   .promo__title {
     margin-right: 190px;
+    margin-bottom: 43px;
 
     @include title();
     font-size: 60px;
   }
 
   .promo__description {
+    font-size: 20px;
+    line-height: 20px;
     color: $font-black;
     text-transform: uppercase;
+    margin-bottom: 47px;
   }
 
   .promo__button {
     width: 245px;
+    height: 52px;
+    font-size: 20px;
+    line-height: 52px;
     order: 0;
-  }
 
-  .promo__image-wrapper {
-    position: relative;
+    &:active {
+      outline: none;
+    }
   }
 
   .promo__image {
     position: absolute;
-    top: -41px;
+    top: 229px;
     z-index: -1;
     left: 50%;
+    width: 709px;
+    height: 609px;
     transform: translateX(-50%);
   }
 }
@@ -92,15 +107,23 @@
   .promo__block {
     display: flex;
     min-height: 532px;
-    margin-bottom: 80px;
+    margin-bottom: 45px;
     margin-left: auto;
   }
 
   .promo__title {
     width: 440px;
+    margin-bottom: 42px;
+  }
+
+  .promo__description {
+    margin-bottom: 52px;
   }
 
   .promo__image {
-    top: -321px;
+    width: 552px;
+    height: 499px;
+    top: -56px;
+    left: 765px;
   }
 }
