@@ -88,6 +88,11 @@
   text-decoration: none;
 }
 
+.item__image-products {
+  width: 140px;
+  height: auto;
+}
+
 @media (min-width: $tablet-width) {
   .item {
     display: flex;
@@ -164,6 +169,10 @@
     justify-content: center;
   }
 
+  .item__image-products {
+    width: 324px;
+  }
+
   .item__image-wrapper {
     margin-top: auto;
   }
@@ -237,6 +246,10 @@
 
   .item__image {
     margin-bottom: 37px;
+  }
+
+  .item__image-products {
+    width: 245px;
   }
 
   .item-features__data {

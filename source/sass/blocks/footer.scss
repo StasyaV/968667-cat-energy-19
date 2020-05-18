@@ -59,6 +59,7 @@
   height: 344px;
   margin: 0 auto;
   background: no-repeat center url("../img/bg-map-mobile@1x.png") $background-color;
+  overflow: hidden;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.png");

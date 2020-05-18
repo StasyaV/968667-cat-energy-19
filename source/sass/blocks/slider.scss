@@ -64,7 +64,7 @@
         position: absolute;
         left: 50%;
         bottom: -109px;
-        width: 100%;
+        width: 100vw;
         height: 462px;
         z-index: -1;
         background-color: $cats-background;
@@ -102,8 +102,8 @@
       background: linear-gradient(to bottom, #ffffff 188px, $cats-background 188px);
 
       &::after {
-        height: 459px;
-        bottom: -132px;
+        height: 479px;
+        bottom: -151px;
       }
     }
   }
