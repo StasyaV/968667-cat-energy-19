@@ -18,15 +18,16 @@
   background-color: #ffffff;
   border-radius: 6px;
   border: 1px solid $border-color;
+}
 
-  &::before {
-    position: absolute;
-    top: 3px;
-    left: 4px;
+.toggle__point {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 
-    content: "";
+  &--green {
     display: block;
-    width: 35px;
+    width: 67px;
     height: 6px;
     background-color: $base-color;
     border-radius: 3px;
@@ -59,15 +60,6 @@
     border-radius: 2.5px;
     background-color: #dcdcdc;
     position: relative;
-
-    &::before {
-      left: 211px;
-      top: -2px;
-      z-index: 1;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-    }
   }
 
   .toggle__before-after {
@@ -89,15 +81,23 @@
   }
 
   .toggle__point {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 51%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 34px;
     height: 34px;
     background-color: #ffffff;
     border-radius: 50%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     cursor: pointer;
+
+    &--green {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
 
     &:hover,
     &:focus {
@@ -113,11 +113,16 @@
 
 @media (min-width: $desktop-width) {
   .toggle {
+    width: 80%;
     bottom: 87px;
     left: 388px;
   }
 
   .toggle__after::after {
     top: -73px;
+  }
+
+  .toggle__point {
+    left: 50%;
   }
 }

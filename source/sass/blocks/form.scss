@@ -551,9 +551,11 @@ input:focus + .form__contacts-data-icon {
   .form__contacts-block {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     p {
-      width: 50%;
+      width: 46%;
+      margin-bottom: 0;
 
       &:first-child {
         margin-right: 80px;
