@@ -219,6 +219,12 @@ input[type="checkbox"]:checked + label::after {
     width: 172px;
     padding: 18px 16px;
     margin-left: 9px;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: $font-oswald;
+    font-weight: normal;
+    color: $font-grey;
+    text-transform: uppercase;
     border: 1px solid $hover-grey;
 
     &::placeholder {
