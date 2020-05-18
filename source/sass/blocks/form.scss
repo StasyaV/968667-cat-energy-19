@@ -417,7 +417,13 @@ input:focus + .form__contacts-data-icon {
     height: 174px;
     margin-left: 0;
     padding: 20px 17px;
-    border: 1px solid $border-color;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: $font-oswald;
+    font-weight: normal;
+    color: $font-grey;
+    text-transform: uppercase;
+    border: 1px solid $hover-grey;
   }
 
   .form__submit {
