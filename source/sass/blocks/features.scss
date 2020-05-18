@@ -47,7 +47,7 @@
     display: block;
     width: 67px;
     height: 49px;
-    background-image: url("../img/svg/icon-cat-slim.svg");
+    background-image: url("../img/icon-cat-slim.svg");
     background-repeat: no-repeat;
     background-size: auto;
     position: absolute;
@@ -61,7 +61,7 @@
     top: 33px;
     width: 70px;
     height: 27px;
-    background-image: url("../img/svg/icon-cat-pro.svg");
+    background-image: url("../img/icon-cat-pro.svg");
   }
 
   &--fat-burn {
@@ -91,7 +91,7 @@
     width: 40px;
     height: 12px;
     margin-left: 10px;
-    background-image: url("../img/svg/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
   }
 
@@ -99,7 +99,7 @@
   &:focus {
     &::after {
       width: 34px;
-      background-image: url("../img/svg/icon-right-arrow-verylong.svg");
+      background-image: url("../img/icon-right-arrow-verylong.svg");
     }
   }
 
