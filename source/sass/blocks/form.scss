@@ -225,6 +225,10 @@ input[type="checkbox"]:checked + label::after {
       @include placeholder;
     }
 
+    &::-ms-input-placeholder {
+      @include placeholder;
+    }
+
     &:hover {
       border: 1px solid $border-color;
     }
@@ -268,6 +272,17 @@ input:focus + .form__contacts-data-icon {
     border: none;
     text-align: left;
   }
+
+  &::-ms-input-placeholder {
+    @include placeholder;
+    border: 1px solid $hover-grey;
+    text-align: left;
+  }
+
+  &:-ms-input-placeholder {
+    border: 1px solid $hover-grey;
+  }
+
 
   &:hover {
     border: 1px solid $border-color;
@@ -438,6 +453,10 @@ input:focus + .form__contacts-data-icon {
     margin-bottom: 57px;
 
     &::placeholder {
+      font-size: 20px;
+    }
+
+    &::-ms-input-placeholder {
       font-size: 20px;
     }
 
