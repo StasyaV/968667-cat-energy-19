@@ -43,11 +43,11 @@ gulp.task("styles", function () {
 
 gulp.task("images", function () {
   return gulp.src("source/img/images/**/*.{png,jpg,svg}")
-    // .pipe(imagemin([
-    //   imagemin.mozjpeg({ quality: 75, progressive: true }),
-    //   imagemin.optipng({ optimizationLevel: 5 }),
-    //   imagemin.svgo()
-    // ]))
+    .pipe(imagemin([
+      imagemin.mozjpeg({ quality: 75, progressive: true }),
+      imagemin.optipng({ optimizationLevel: 5 }),
+      imagemin.svgo()
+    ]))
     .pipe(gulp.dest("build/img"));
 });
 

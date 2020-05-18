@@ -122,6 +122,10 @@
       background: #ffffff;
       border: 1px solid $border-color;
 
+      @media screen {
+        height: 415px;
+      }
+
       .item__image {
         width: 61px;
         min-height: 61px;

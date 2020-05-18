@@ -235,6 +235,11 @@ input[type="checkbox"]:checked + label::after {
       @include placeholder;
     }
 
+    &::-moz-placeholder {
+      @include placeholder;
+      opacity: 1;
+    }
+
     &:hover {
       border: 1px solid $border-color;
     }
@@ -289,6 +294,10 @@ input:focus + .form__contacts-data-icon {
     border: 1px solid $hover-grey;
   }
 
+  &::-moz-placeholder {
+    @include placeholder;
+    opacity: 1;
+  }
 
   &:hover {
     border: 1px solid $border-color;
