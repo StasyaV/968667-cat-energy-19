@@ -73,6 +73,10 @@
   margin-bottom: 20px;
 }
 
+.form__contacts-title {
+  width: 220px;
+}
+
 .form__comments {
   padding: 0;
   margin-bottom: 15px;
@@ -457,9 +461,7 @@ input:focus + .form__contacts-data-icon {
   }
 
   .form__contacts-title {
-    br {
-      display: none;
-    }
+    width: auto;
   }
 
   .cat-info {
