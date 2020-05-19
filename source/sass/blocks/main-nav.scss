@@ -1,11 +1,12 @@
 
-.main-nav,
-.main-nav--no-js,
-.main-nav--open {
-  display: block;
-
+.main-nav {
   &--closed {
     display: none;
+  }
+
+  &--no-js,
+  &--open {
+    display: block;
   }
 }
 
